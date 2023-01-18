@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="container">
+    <footer className="container footer">
       <div>
         <a href="https://github.com/yandaagil"></a>
         <a href="https://twitter.com/yandaagil"></a>
