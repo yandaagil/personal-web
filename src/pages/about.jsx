@@ -1,4 +1,3 @@
-import Navbar from "./components/navbar";
 import Link from "next/link";
 import Head from "next/head";
 import Footer from "./footer";
@@ -22,7 +21,7 @@ const About = () => {
               natus error sit voluptatem accusantium doloremque laste. Dolores
               sadips ipsums sits.
             </p>
-            <Link href="/contact" className="btn">
+            <Link href="public/cv.pdf" className="btn" target="__blank">
               Curriculum Vitae
             </Link>
           </div>
