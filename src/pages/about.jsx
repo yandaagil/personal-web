@@ -12,8 +12,8 @@ const About = () => {
       <section className="hero">
         <div className="container">
           <div className="text-wrapper w-full">
-            <h1 className="title">Profil</h1>
-            <p className="description">
+            <h1 className="title smaller">Profil</h1>
+            <p className="description paragraph">
               Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est
               et expeditasi distinctio. Nam libero tempore, cum soluta nobis est
               eligendi optio cumque nihilse impedit quo minus id quod amets
@@ -21,9 +21,15 @@ const About = () => {
               natus error sit voluptatem accusantium doloremque laste. Dolores
               sadips ipsums sits.
             </p>
-            <Link href="public/cv.pdf" className="btn" target="__blank">
-              Curriculum Vitae
-            </Link>
+            <div className="button-container center">
+              <Link
+                href="public/cv.pdf"
+                className="btn center"
+                target="__blank"
+              >
+                Curriculum Vitae
+              </Link>
+            </div>
           </div>
         </div>
       </section>

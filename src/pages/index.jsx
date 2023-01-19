@@ -17,10 +17,11 @@ export default function Home() {
               Saya adalah seorang fresh graduate sebagai pengembang web junior
               yang berfokus pada front-end dan web application.
             </p>
-
-            <Link href="/contact" className="btn">
-              Kontak Saya
-            </Link>
+            <div className="button-container left">
+              <Link href="/contact" className="btn">
+                Kontak Saya
+              </Link>
+            </div>
           </div>
           <div className="image-wrapper">
             <svg

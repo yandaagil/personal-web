@@ -10,14 +10,6 @@ const Footer = () => {
         2023 © yandaagil | Dibuat dengan{" "}
         <a href="https://nextjs.org/" className="nav-item" target="__blank">
           NextJS
-        </a>{" "}
-        | Terinspirasi dari{" "}
-        <a
-          href="https://github.com/athul/archie"
-          className="btn"
-          target="__blank"
-        >
-          Archie Theme
         </a>
       </div>
     </footer>

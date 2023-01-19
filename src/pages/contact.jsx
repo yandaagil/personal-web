@@ -12,35 +12,37 @@ const Contact = () => {
       <section className="hero">
         <div className="container">
           <div className="text-wrapper w-full">
-            <h1 className="title">Kontak</h1>
-            <p className="description">
+            <h1 className="title smaller">Kontak</h1>
+            <p className="description paragraph">
               Incididunt in cillum magna occaecat nisi qui in exercitation
               labore anim adipisicing amet irure tempor.
             </p>
-            <Link href="/contact" className="btn center" target="__blank">
-              Email
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/yandaagil/"
-              className="btn center"
-              target="__blank"
-            >
-              LinkedIn
-            </Link>
-            <Link
-              href="https://github.com/yandaagil"
-              className="btn center"
-              target="__blank"
-            >
-              GitHub
-            </Link>
-            <Link
-              href="https://www.instagram.com/yandaagil/"
-              className="btn center"
-              target="__blank"
-            >
-              Instagram
-            </Link>
+            <div className="button-container center">
+              <Link href="" className="btn center" target="">
+                Email
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/yandaagil/"
+                className="btn center"
+                target="__blank"
+              >
+                LinkedIn
+              </Link>
+              <Link
+                href="https://github.com/yandaagil"
+                className="btn center"
+                target="__blank"
+              >
+                GitHub
+              </Link>
+              <Link
+                href="https://www.instagram.com/yandaagil/"
+                className="btn center"
+                target="__blank"
+              >
+                Instagram
+              </Link>
+            </div>
           </div>
         </div>
       </section>
