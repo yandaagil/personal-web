@@ -75,7 +75,7 @@ const Portfolio = () => {
                   labore anim adipisicing amet irure tempor.
                 </p>
                 <div className="tag-container">
-                  <p className="tag-item">NextJS</p>
+                  <p className="tag-item">ReactJS</p>
                   <p className="tag-item">HTML</p>
                   <p className="tag-item">CSS</p>
                 </div>

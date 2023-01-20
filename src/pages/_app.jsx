@@ -1,5 +1,5 @@
 import "@/styles/app.scss";
-import "../styles/transition.css";
+// import "../styles/transition.css";
 import Transition from "./components/transition";
 import Navbar from "./components/navbar";
 
