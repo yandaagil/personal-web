@@ -25,8 +25,8 @@ export default function Home() {
           </div>
           <div className="image-wrapper">
             <svg
-              width="426"
-              height="543"
+              width="400"
+              height="517"
               viewBox="0 0 426 543"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

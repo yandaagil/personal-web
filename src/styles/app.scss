@@ -64,7 +64,7 @@ a[href] {
 	color: var(--color-text);
 	transition: all .3s ease;
 	text-decoration: none;
-	border-bottom: 3px solid var(--color-underline);
+	border-bottom: 0.16em solid var(--color-underline);
 
 	&:hover {
 		background-color: var(--color-block);
@@ -80,7 +80,7 @@ a[href] {
 }
 
 .navbar {
-	margin-top: 5px;
+	margin-top: 0.27em;
 
 	.container {
 		display: flex;
@@ -89,11 +89,11 @@ a[href] {
 
 	.logo {
 		transition: all .3s ease;
-		padding: 0 2px 0 2px;
-		font-size: 28px;
+		padding: 0 0.1em 0 0.1em;
+		font-size: 1.5em;
 		font-weight: 600;
 		text-decoration: none;
-		border: 3px solid var(--color-underline);
+		border: 0.16em solid var(--color-underline);
 		background-color: var(--color-underline);
 		color: var(--color-background);
 
@@ -112,11 +112,11 @@ a[href] {
 			transition: all .3s ease;
 			position: relative;
 			display: inline-block;
-			margin-left: 5px;
-			margin-right: 5px;
+			margin-left: 0.27em;
+			margin-right: 0.27em;
 			font-weight: 600;
 			text-decoration: none;
-			border-bottom: 3px solid var(--color-underline);
+			border-bottom: 0.16em solid var(--color-underline);
 
 			&:hover {
 				display: inline-block;
@@ -129,8 +129,8 @@ a[href] {
 }
 
 .hero {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 1.1em;
+	padding-bottom: 1.1em;
 
 	.container {
 		display: flex;
@@ -144,12 +144,12 @@ a[href] {
 			}
 
 			.title {
-				font-size: 38px;
+				font-size: 2.1em;
 				margin-top: 0;
-				margin-bottom: 10px;
+				margin-bottom: 0.5em;
 
 				&.smaller {
-					font-size: 30px;
+					font-size: 1.6em;
 				}
 
 				&.center {
@@ -158,7 +158,7 @@ a[href] {
 			}
 
 			.description {
-				font-size: 20px;
+				font-size: 1.1em;
 				line-height: 1.5;
 
 				&.paragraph {
@@ -182,10 +182,10 @@ a[href] {
 					display: inline-block;
 					cursor: pointer;
 					text-decoration: none;
-					padding: 15px 25px;
+					padding: 0.83em 1.38em;
 					border: 3px solid var(--color-underline);
 					font-weight: bold;
-					letter-spacing: 3px;
+					letter-spacing: 0.16em;
 					color: var(--color-text);
 					text-transform: uppercase;
 					background: var(--color-background);
@@ -193,7 +193,7 @@ a[href] {
 					transition: .15s cubic-bezier(0, 0, .6, 1);
 
 					&.center {
-						margin: 10px 10px 10px 10px;
+						margin: 0.5em 0.5em 0.5em 0.5em;
 					}
 				}
 				
@@ -250,13 +250,13 @@ a[href] {
 
 	.portfolio-item {
 		flex: 1 1 20%;
-		margin: 10px 10px 20px;
+		margin: 0.5em 0.5em 1.1em;
 		font-family: 'Fira Sans', sans-serif;
 		text-align: center;
 		position: relative;
 		display: inline-block;
 		text-decoration: none;
-		padding: 15px 15px;
+		padding: 0.83em 0.83em;
 		border: 3px dashed var(--color-light-card);
 		border-bottom-style: solid;
 		color: var(--color-text);
@@ -265,14 +265,14 @@ a[href] {
 		transition: .15s cubic-bezier(0, 0, .6, 1);
 
 		.portfolio-image {
-			max-width: 200px;
-			max-height: 200px;
+			max-width: 11.1em;
+			max-height: 11.1em;
 		}
 
 		.portfolio-name {
-			font-size: 20px;
-			margin-top: 10px;
-			margin-bottom: 10px;
+			font-size: 1.1em;
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
 			text-transform: capitalize;
 			
 			&::before {
@@ -281,14 +281,14 @@ a[href] {
 		}
 
 		.portfolio-category {
-			margin-top: 10px;
+			margin-top: 0.5em;
 			color: var(--color-block-dark);
-			font-size: 17px;
+			font-size: 18px;
 			text-transform: uppercase;
 		}
 
 		.portfolio-desc {
-			font-size: 15px;
+			font-size: 0.83em;
 
 			&::before {
 				content: "";
@@ -304,9 +304,9 @@ a[href] {
 				display: inline-block;
 				max-width: 100%;
 				font-size: 16px;
-				margin: 4px;
-				border: 3px solid var(--color-underline);
-				padding: 0 2px 0 2px;
+				margin: 0.2em;
+				border: 0.16em solid var(--color-underline);
+				padding: 0 0.1em 0 0.1em;
 				transition: all .3s ease;
 
 				&::before {
@@ -314,7 +314,7 @@ a[href] {
 				}
 
 				&:hover {
-					border: 3px solid var(--color-underline);
+					border: 0.16em solid var(--color-underline);
 					background-color: var(--color-underline);
 					color: var(--color-background);
 				}
@@ -349,13 +349,13 @@ a[href] {
 
 .contact-links {
 	padding: 0;
-	padding-left: 15px;
-	margin-top: -10px;
+	padding-left: 0.83em;
+	margin-top: -0.5em;
 	list-style: none;
 
 	.contact-item {
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
 
 		&::before {
 			content: '* ';
@@ -374,6 +374,9 @@ a[href] {
 }
 
 @media screen and (max-width: 425px) {
+	body {
+		font-size: 16px;
+	}
 	.container {
 		width: 400px;
 		margin-left: auto;
@@ -407,7 +410,7 @@ a[href] {
 			text-align: center;
 			
 			&.center {
-				margin: 10px 10px 10px 10px;
+				margin: 0.5em 0.5em 0.5em 0.5em;
 			}
 		};
 	}
