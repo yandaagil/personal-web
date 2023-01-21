@@ -135,110 +135,112 @@ a[href] {
 	.container {
 		display: flex;
 		align-items: center;
-	}
 
-	.text-wrapper {
-		width: 50%;
-		
-		&.w-full {
-			width: 100%;
-		}
-
-		.title {
-			font-size: 38px;
-			margin-top: 0;
-			margin-bottom: 10px;
-
-			&.smaller {
-				font-size: 30px;
+		.text-wrapper {
+			width: 50%;
+			
+			&.w-full {
+				width: 100%;
 			}
 
-			&.center {
-				text-align: center;
-			}
-		}
+			.title {
+				font-size: 38px;
+				margin-top: 0;
+				margin-bottom: 10px;
 
-		.description {
-			font-size: 20px;
-			line-height: 1.5;
-
-			&.paragraph {
-				font-family: 'Fira Sans', sans-serif;
-			}
-		}
-
-		.button-container {
-			display: flex;
-
-			&.left {
-				justify-content: flex-start;
-			}
-
-			&.center {
-				justify-content: center;
-			}
-		
-			.btn {
-				position: relative;
-				display: inline-block;
-				cursor: pointer;
-				text-decoration: none;
-				padding: 15px 25px;
-				border: 3px solid var(--color-underline);
-				font-weight: bold;
-				letter-spacing: 3px;
-				color: var(--color-text);
-				text-transform: uppercase;
-				background: var(--color-background);
-				transform-style: preserve-3d;
-				transition: .15s cubic-bezier(0, 0, .6, 1);
+				&.smaller {
+					font-size: 30px;
+				}
 
 				&.center {
-					margin: 0 10px 0 10px;
+					text-align: center;
 				}
 			}
-			
-			.btn::before {
-				content: '';
-				position: absolute;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background: var(--color-block-dark);
-				box-shadow: 0 0 0 3px var(--color-underline);
-				transform: translate3d(0, .75em, -1em);
-				transition: .15s cubic-bezier(0, 0, .6, 1);
+
+			.description {
+				font-size: 20px;
+				line-height: 1.5;
+
+				&.paragraph {
+					font-family: 'Fira Sans', sans-serif;
+				}
 			}
+
+			.button-container {
+				display: flex;
+
+				&.left {
+					justify-content: flex-start;
+				}
+
+				&.center {
+					justify-content: center;
+				}
 			
-			.btn:hover {
-				background: var(--color-light-button);
-				transform: translate(0, .25em);
+				.btn {
+					position: relative;
+					display: inline-block;
+					cursor: pointer;
+					text-decoration: none;
+					padding: 15px 25px;
+					border: 3px solid var(--color-underline);
+					font-weight: bold;
+					letter-spacing: 3px;
+					color: var(--color-text);
+					text-transform: uppercase;
+					background: var(--color-background);
+					transform-style: preserve-3d;
+					transition: .15s cubic-bezier(0, 0, .6, 1);
+
+					&.center {
+						margin: 0 10px 0 10px;
+					}
+				}
+				
+				.btn::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: var(--color-block-dark);
+					box-shadow: 0 0 0 3px var(--color-underline);
+					transform: translate3d(0, .75em, -1em);
+					transition: .15s cubic-bezier(0, 0, .6, 1);
+				}
+				
+				.btn:hover {
+					background: var(--color-light-button);
+					transform: translate(0, .25em);
+				}
+				
+				.btn:hover::before {
+					box-shadow: 0 0 0 3px var(--color-underline);
+					transform: translate3d(0, .5em, -1em);
+				}
+				
+				.btn:active {
+					background: var(--color-block);
+					color: var(--color-background);
+					transform: translate(0, .75em);
+				}
+				
+				.btn:active::before {
+					transform: translate3d(0, 0, -1em);
+				}
 			}
-			
-			.btn:hover::before {
-				box-shadow: 0 0 0 3px var(--color-underline);
-				transform: translate3d(0, .5em, -1em);
-			}
-			
-			.btn:active {
-				background: var(--color-block);
-				color: var(--color-background);
-				transform: translate(0, .75em);
-			}
-			
-			.btn:active::before {
-				transform: translate3d(0, 0, -1em);
-			}
+		}
+
+		.image-wrapper {
+			width: 50%;
+			text-align: right;
 		}
 	}
 
-	.image-wrapper {
-		width: 50%;
-		text-align: right;
-	}
+	
 }
 
 .portfolio-wrapper {
@@ -379,17 +381,26 @@ a[href] {
 	}
 
 	.hero {
-		.text-wrapper {
-			width: 100%;
-		}
-		
-		.image-wrapper {
-			width: 100%;
+		.container {
+			flex-wrap: wrap;
+			flex-direction: column-reverse;
+			.text-wrapper {
+				width: 100%;
+			}
+			
+			.image-wrapper {
+				width: 100%;
+				text-align: center;
+			}
 		}
 	}
 
 	.button-container {
 		flex-wrap: wrap;
+
+		&.left {
+			justify-content: center;
+		}
 		
 		.btn {
 			flex: 1 1 100%;
