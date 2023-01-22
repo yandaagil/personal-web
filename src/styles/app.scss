@@ -375,10 +375,10 @@ a[href] {
 
 @media screen and (max-width: 425px) {
 	body {
-		font-size: 16px;
+		font-size: 15px;
 	}
 	.container {
-		width: 400px;
+		width: 350px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -394,6 +394,11 @@ a[href] {
 			.image-wrapper {
 				width: 100%;
 				text-align: center;
+
+				svg {
+					width: auto;
+					height: auto;
+				}
 			}
 		}
 	}

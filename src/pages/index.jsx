@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Head from "next/head";
 import Footer from "./footer";
+// import SVG from "./components/svg";
 
 export default function Home() {
   return (
@@ -25,8 +26,8 @@ export default function Home() {
           </div>
           <div className="image-wrapper">
             <svg
-              width="400"
-              height="517"
+              // width={props.width}
+              // height={props.height}
               viewBox="0 0 426 543"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
