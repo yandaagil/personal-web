@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
 import Footer from "./footer";
-// import SVG from "./components/svg";
 
 export default function Home() {
   return (
@@ -15,8 +14,8 @@ export default function Home() {
           <div className="text-wrapper">
             <h1 className="title">Halo, saya Yanda Agil</h1>
             <p className="description">
-              Saya adalah seorang fresh graduate sebagai pengembang web junior
-              yang berfokus pada front-end dan web application.
+              Saya adalah seorang fresh graduate sebagai pengembang web yang
+              berfokus pada front-end dan web application.
             </p>
             <div className="button-container left">
               <Link href="/contact" className="btn">
@@ -26,8 +25,6 @@ export default function Home() {
           </div>
           <div className="image-wrapper">
             <svg
-              // width={props.width}
-              // height={props.height}
               viewBox="0 0 426 543"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

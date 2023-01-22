@@ -6,7 +6,7 @@ const Footer = () => {
         <a href="https://twitter.com/yandaagil"></a>
         <a href="https://instagram.com/yandaagil"></a>
       </div>
-      <div>
+      <div className="footer-text">
         2023 © yandaagil | Dibuat dengan{" "}
         <a href="https://nextjs.org/" className="nav-item" target="__blank">
           NextJS
