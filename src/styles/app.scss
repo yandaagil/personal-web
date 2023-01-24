@@ -107,6 +107,7 @@ a[href] {
 		display: flex;
 		margin-left: auto;
 		list-style: none;
+		flex-wrap: wrap;
 
 		.nav-item {
 			transition: all .3s ease;
@@ -377,6 +378,7 @@ a[href] {
 	body {
 		font-size: 15px;
 	}
+
 	.container {
 		width: 350px;
 		margin-left: auto;
@@ -423,6 +425,20 @@ a[href] {
 	.footer {
 		.footer-text {
 			font-size: 0.86em;
+		}
+	}
+
+	.navbar {
+		.container {
+			flex-wrap: wrap;
+			flex-direction: column;
+		}
+
+		.nav-links {
+			display: flex;
+			margin-left: 0;
+			list-style: none;
+			padding-inline-start: 0;
 		}
 	}
 }

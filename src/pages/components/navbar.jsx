@@ -23,8 +23,8 @@ const Navbar = () => {
               Kontak
             </Link>
           </li>
+          <ThemeToggle />
         </ul>
-        <ThemeToggle />
       </div>
     </nav>
   );

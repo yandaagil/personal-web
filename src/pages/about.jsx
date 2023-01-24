@@ -23,7 +23,7 @@ const About = () => {
             </p>
             <div className="button-container center">
               <Link
-                href="public/cv.pdf"
+                href="https://github.com/yandaagil/personal-web/blob/main/public/cv.pdf"
                 className="btn center"
                 target="__blank"
               >
