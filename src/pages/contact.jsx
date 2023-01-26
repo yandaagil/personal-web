@@ -14,8 +14,7 @@ const Contact = () => {
           <div className="text-wrapper w-full">
             <h1 className="title smaller">Kontak</h1>
             <p className="description paragraph">
-              Incididunt in cillum magna occaecat nisi qui in exercitation
-              labore anim adipisicing amet irure tempor.
+              Berikut ini adalah kontak saya yang dapat dihubungi.
             </p>
             <div className="button-container center">
               <Link href="" className="btn center" target="">

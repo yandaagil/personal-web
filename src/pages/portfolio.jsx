@@ -27,7 +27,7 @@ const Portfolio = () => {
                   className="portfolio-image"
                 ></Image>
                 <div className="portfolio-category">Web Application</div>
-                <h4 className="portfolio-name">Sistem Manajemen Gudang</h4>
+                <h4 className="portfolio-name">Inventory Management</h4>
                 <p className="portfolio-desc">
                   Lid est laborum et dolorum fuga. Et harum quidem rerum facilis
                   est et expeditasi distinctio. Nam libero tempore, cum soluta
@@ -87,8 +87,8 @@ const Portfolio = () => {
                   alt="kajian-app"
                   className="portfolio-image"
                 ></Image>
-                <div className="portfolio-category">Landing Page</div>
-                <h4 className="portfolio-name">Kajian App</h4>
+                <div className="portfolio-category">Web Application</div>
+                <h4 className="portfolio-name">Todo Apps</h4>
                 <p className="portfolio-desc">
                   Incididunt in cillum magna occaecat nisi qui in exercitation
                   labore anim adipisicing amet irure tempor.
@@ -107,7 +107,7 @@ const Portfolio = () => {
                   className="portfolio-image"
                 ></Image>
                 <div className="portfolio-category">Landing Page</div>
-                <h4 className="portfolio-name">Kajian App</h4>
+                <h4 className="portfolio-name">Holadok</h4>
                 <p className="portfolio-desc">
                   Incididunt in cillum magna occaecat nisi qui in exercitation
                   labore anim adipisicing amet irure tempor.

@@ -14,7 +14,7 @@ export default function Home() {
           <div className="text-wrapper">
             <h1 className="title">Halo, saya Yanda Agil</h1>
             <p className="description">
-              Saya adalah seorang fresh graduate sebagai pengembang web yang
+              Saya adalah seorang undergraduate sebagai pengembang web yang
               berfokus pada front-end dan web application.
             </p>
             <div className="button-container left">

@@ -14,15 +14,15 @@ const About = () => {
           <div className="text-wrapper w-full">
             <h1 className="title smaller">Profil</h1>
             <p className="description paragraph">
-              Mahasiswa S1 jurusan Teknik Informatika dengan fokus Front-end
-              development. Terampil dalam HTML, CSS, JavaScript, dan berbagai
-              framework front-end. Mahir dalam membuat situs web yang menarik
-              secara visual dan ramah pengguna, dan memiliki pemahaman yang kuat
-              tentang prinsip desain web, desain responsif, dan praktik terbaik
-              pengembangan web. Mencari peluang magang atau bekerja untuk
-              mendapatkan pengalaman langsung dan berkontribusi pada proyek
-              dunia nyata sembari terus mengembangkan keterampilan dan
-              pengetahuan saya di bidang pengembangan front-end.
+              Saya adalah Mahasiswa S1 jurusan Teknik Informatika dengan fokus
+              Front-end development. Terampil dalam HTML, CSS, JavaScript, dan
+              berbagai framework front-end. Mahir dalam membuat situs web yang
+              menarik secara visual dan ramah pengguna, dan memiliki pemahaman
+              yang kuat tentang prinsip desain web, desain responsif, dan
+              praktik terbaik pengembangan web. Mencari peluang magang atau
+              bekerja untuk mendapatkan pengalaman langsung dan berkontribusi
+              pada proyek dunia nyata sembari terus mengembangkan keterampilan
+              dan pengetahuan saya di bidang pengembangan front-end.
             </p>
             <div className="button-container center">
               <Link
