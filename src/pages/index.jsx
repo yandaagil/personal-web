@@ -22,8 +22,7 @@ export default function Home() {
               Indonesia.
             </h1>
             <p className="head-desc">
-              I am an undergraduate as a web developer focusing on front-end and
-              web applications.
+              I am a web developer focusing on front-end and web applications.
             </p>
           </div>
         </div>
@@ -51,6 +50,21 @@ export default function Home() {
 
                 <div className="work-item">
                   <h3>Portfolio Website</h3>
+                  <p>
+                    Incididunt in cillum magna occaecat nisi qui in exercitation
+                    labore anim adipisicing amet irure tempor.
+                  </p>
+                  <a
+                    href="https://github.com/yandaagil/personal-web/blob/main/public/cv.pdf"
+                    className="button"
+                    target="__blank"
+                  >
+                    Read more
+                  </a>
+                </div>
+
+                <div className="work-item">
+                  <h3>Todo Apps</h3>
                   <p>
                     Incididunt in cillum magna occaecat nisi qui in exercitation
                     labore anim adipisicing amet irure tempor.
