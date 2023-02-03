@@ -30,7 +30,7 @@ const Footer = () => {
             </a>
           </div>
           <p>
-            Copyright © MMIII @yandaagil • Created with{" "}
+            Copyright © MMXXIII @yandaagil • Created with{" "}
             <a href="https://nextjs.org/" className="btn" target="__blank">
               NextJS
             </a>
