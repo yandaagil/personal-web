@@ -16,7 +16,7 @@
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
@@ -160,20 +160,60 @@ a[href] {
 
 						h3 {
 							margin-top: 0;
-							color: var(--c-text);
-						}
+							margin-right: auto;
 
+							.btn {
+								color: var(--c-text);
+								border: 1px solid var(--c-background);
+
+								&:hover {
+									border-bottom: 1px solid var(--c-text);
+								}
+							}
+						}
+						
 						p {
 							margin-top: 0;
 							color: var(--c-text-grey);
 						}
 
-						.button {
+						.link {
 							margin-right: auto;
-							border: 1px solid var(--c-background);
-		
+							color: var(--c-text);
+							cursor: pointer;
+							font-weight: 400;
+							text-decoration: none;
+						}
+						
+						.link--arrowed {
+							display: inline-block;
+								height: 2rem;
+								line-height: 2rem;
+							
+							.arrow-icon {
+								position: relative;
+								top: -1px;
+								-webkit-transition: -webkit-transform 0.3s ease;
+								transition: -webkit-transform 0.3s ease;
+								transition: transform 0.3s ease;
+								transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+								vertical-align: middle;
+							}
+							
+							.arrow-icon--circle {
+								transition: stroke-dashoffset .3s ease;
+								stroke-dasharray: 95;
+								stroke-dashoffset: 95;
+							}
+							
 							&:hover {
-								border-bottom: 1px solid var(--c-text);
+								.arrow-icon {
+									transform: translate3d(5px, 0, 0);
+								}
+								
+								.arrow-icon--circle {
+									stroke-dashoffset: 0;
+								}
 							}
 						}
 					}

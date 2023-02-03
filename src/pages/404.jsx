@@ -1,22 +1,27 @@
 import Head from "next/head";
-import Footer from "./footer";
 
 const NotFound = () => {
   return (
     <>
       <Head>
         <title>X__X</title>
+        <meta name="description" content="Portfolio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <section className="hero">
         <div className="container">
-          <div className="text-wrapper w-full">
-            <h1 className="title smaller center">404 | Mau cari apa bang?</h1>
+          <div className="head">
+            <h1
+              className="head-title glitch is-glitching"
+              data-text="#404 | Not Found"
+            >
+              #404 | Not Found
+            </h1>
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   );
 };
