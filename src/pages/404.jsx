@@ -10,7 +10,7 @@ const NotFound = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="hero">
+      <section className="hero error">
         <div className="container">
           <div className="head">
             <h1

@@ -14,11 +14,7 @@ const Work = () => {
                 Lid est laborum et dolorum fuga. Et harum quidem rerum facilis
                 est et expeditasi distinctio. Nam libero tempore.
               </p>
-              <a
-                href="https://github.com/yandaagil/personal-web/blob/main/public/cv.pdf"
-                className="link link--arrowed"
-                target="__blank"
-              >
+              <a href="./projects/inventory" className="link link--arrowed">
                 <span>Read more</span>
                 <svg
                   class="arrow-icon"
@@ -59,11 +55,7 @@ const Work = () => {
                 Incididunt in cillum magna occaecat nisi qui in exercitation
                 labore anim adipisicing amet irure tempor.
               </p>
-              <a
-                href="https://github.com/yandaagil/personal-web/blob/main/public/cv.pdf"
-                className="link link--arrowed"
-                target="__blank"
-              >
+              <a href="./projects/portfolio" className="link link--arrowed">
                 <span>Read more</span>
                 <svg
                   class="arrow-icon"
@@ -97,18 +89,14 @@ const Work = () => {
             <div className="work-item">
               <h3>
                 <a href="" className="btn">
-                  Todo Apps
+                  Todo App
                 </a>
               </h3>
               <p>
                 Incididunt in cillum magna occaecat nisi qui in exercitation
                 labore anim adipisicing amet irure tempor.
               </p>
-              <a
-                href="https://github.com/yandaagil/personal-web/blob/main/public/cv.pdf"
-                className="link link--arrowed"
-                target="__blank"
-              >
+              <a href="./projects/todo" className="link link--arrowed">
                 <span>Read more</span>
                 <svg
                   class="arrow-icon"
@@ -149,11 +137,48 @@ const Work = () => {
                 Incididunt in cillum magna occaecat nisi qui in exercitation
                 labore anim adipisicing amet irure tempor.
               </p>
-              <a
-                href="https://github.com/yandaagil/personal-web/blob/main/public/cv.pdf"
-                className="link link--arrowed"
-                target="__blank"
-              >
+              <a href="./projects/chatflow" className="link link--arrowed">
+                <span>Read more</span>
+                <svg
+                  class="arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="26"
+                  viewBox="0 0 32 32"
+                >
+                  <g
+                    fill="none"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                  >
+                    <circle
+                      class="arrow-icon--circle"
+                      cx="16"
+                      cy="16"
+                      r="15.12"
+                    ></circle>
+                    <path
+                      class="arrow-icon--arrow"
+                      d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+
+            <div className="work-item">
+              <h3>
+                <a href="" className="btn">
+                  SPPD App
+                </a>
+              </h3>
+              <p>
+                Incididunt in cillum magna occaecat nisi qui in exercitation
+                labore anim adipisicing amet irure tempor.
+              </p>
+              <a href="./projects/sppd" className="link link--arrowed">
                 <span>Read more</span>
                 <svg
                   class="arrow-icon"

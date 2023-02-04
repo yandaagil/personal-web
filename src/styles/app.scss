@@ -7,7 +7,7 @@
 	--c-background: black;
 	--c-text: white;
 	--c-text-grey: grey;
-	--c-grey: #ccc;;
+	--c-grey: #ccc;
 }
 
 ::selection {
@@ -39,6 +39,10 @@ a[href] {
 	background: var(--c-background);
 	border-bottom: 1px solid var(--c-grey);
 
+	&.error {
+		border-bottom: none;
+	}
+
 	.container {
 		width: 80%;
 		height: 100vh;
@@ -46,6 +50,10 @@ a[href] {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+
+		&.work {
+			justify-content: flex-start;
+		}
 
 		.head {
 			
@@ -117,11 +125,43 @@ a[href] {
 				text-align: end;
 			}
 		}
+
+		.project {
+			display: flex;
+			flex-direction: column;
+			padding: 50px 80px 80px 80px;
+			height: 100%;
+			border-left: 1px solid var(--c-grey);
+
+			.back {
+				margin-bottom: 20px;
+				margin-right: auto;
+				color: var(--c-text);
+				border: 1px solid var(--c-background);
+
+					&:hover {
+						border-bottom: 1px solid var(--c-text);
+					}
+			}
+
+			.project-title {
+				margin-bottom: 10px;
+				font-family: var(--font-inter);
+				font-weight: 700;
+				font-size: 4rem;
+				color: var(--c-text);
+			}
+
+			.project-desc {
+				color: var(--c-text-grey);
+			}
+		}
 	}
 }
 
 .main {
 	background: var(--c-background);
+	
 	.section-work {
 		width: 100%;
 		border-bottom: 1px solid var(--c-grey);
@@ -328,6 +368,14 @@ a[href] {
 }
 
 @media screen and (max-width: 768px) {
+	.hero {
+		.container {
+			.project {
+				padding: 50px 30px 80px 80px;
+			}
+		}
+	}
+
 	.main {
 		.section-work {
 			.container {
@@ -358,7 +406,6 @@ a[href] {
 
 	.footer {
 		.container {
-	
 			.content {
 				flex-direction: column;
 	
@@ -380,6 +427,15 @@ a[href] {
 	
 				.head-desc {
 					font-size: 1.25rem;
+				}
+			}
+
+			.project {
+				padding: 50px 0 80px 0;
+				border-left: none;
+
+				.project-title {
+					font-size: 2rem;
 				}
 			}
 		}
