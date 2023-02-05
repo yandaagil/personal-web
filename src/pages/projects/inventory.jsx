@@ -32,6 +32,14 @@ const Inventory = () => {
               dolorum fuga. Et harum quidem rerum facilis est et expeditasi
               distinctio. Nam libero tempore.
             </p>
+            <div className="button-container">
+              <Link href="" className="button" target="__blank">
+                Source Code
+              </Link>
+              <Link href="" className="button preview" target="__blank">
+                Live Preview
+              </Link>
+            </div>
           </div>
         </div>
       </section>

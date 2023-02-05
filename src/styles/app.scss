@@ -155,6 +155,45 @@ a[href] {
 			.project-desc {
 				color: var(--c-text-grey);
 			}
+
+			.button-container {
+				margin-top: 20px;
+
+				.button {
+					margin-right: 1rem;
+					padding: 8px 20px;
+					font-size: 1rem;
+					font-weight: 600;
+					background-color: var(--c-text);
+					box-shadow: inset -3px -3px 0 var(--c-text);
+					border: 3px solid var(--c-text);
+					color: var(--c-background);
+
+					&:hover {
+						border: 3px solid var(--c-text);
+						background-color: var(--c-background);
+						box-shadow: inset -3px -3px 0 var(--c-text-grey);
+						color: var(--c-text);
+					}
+
+					&.preview {
+						padding: 8px 20px;
+						font-size: 1rem;
+						font-weight: 600;
+						border: 3px solid var(--c-text);
+						box-shadow: inset -3px -3px 0 var(--c-text-grey);
+						background-color: var(--c-background);
+						color: var(--c-text);
+
+						&:hover {
+							background-color: var(--c-text);
+							box-shadow: inset -3px -3px 0 var(--c-text);
+							border: 3px solid var(--c-text);
+							color: var(--c-background);
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -203,6 +242,7 @@ a[href] {
 							margin-right: auto;
 
 							.btn {
+								padding-bottom: 0.2rem;
 								color: var(--c-text);
 								border: 1px solid var(--c-background);
 
@@ -417,7 +457,7 @@ a[href] {
 	}
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 555px) {
 	.hero {
 		.container {
 			.head {

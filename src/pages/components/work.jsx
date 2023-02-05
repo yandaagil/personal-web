@@ -6,7 +6,7 @@ const Work = () => {
           <div className="work-container">
             <div className="work-item">
               <h3>
-                <a href="" className="btn">
+                <a href="./projects/inventory" className="btn">
                   Inventory Management
                 </a>
               </h3>
@@ -47,7 +47,7 @@ const Work = () => {
 
             <div className="work-item">
               <h3>
-                <a href="" className="btn">
+                <a href="./projects/portfolio" className="btn">
                   Portfolio Website
                 </a>
               </h3>
@@ -88,7 +88,7 @@ const Work = () => {
 
             <div className="work-item">
               <h3>
-                <a href="" className="btn">
+                <a href="./projects/todo" className="btn">
                   Todo App
                 </a>
               </h3>
@@ -129,7 +129,7 @@ const Work = () => {
 
             <div className="work-item">
               <h3>
-                <a href="" className="btn">
+                <a href="./projects/chatflow" className="btn">
                   Chatflow Landing
                 </a>
               </h3>
@@ -170,7 +170,7 @@ const Work = () => {
 
             <div className="work-item">
               <h3>
-                <a href="" className="btn">
+                <a href="./projects/sppd" className="btn">
                   SPPD App
                 </a>
               </h3>

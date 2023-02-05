@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container">
         <div className="content">
           <div className="button-container">
-            <a href="" className="btn" target="">
+            <a href="mailto:yandaagil@gmail.com" className="btn" target="">
               Email
             </a>
             <a
