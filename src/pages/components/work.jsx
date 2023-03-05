@@ -1,213 +1,76 @@
 const Work = () => {
+  const lists = [
+    {
+      title: "Inventory Management",
+      desc: "Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore.",
+      link: "./projects/inventory",
+    },
+    {
+      title: "Portfolio Website",
+      desc: "Incididunt in cillum magna occaecat nisi qui in exercitation labore anim adipisicing amet irure tempor.",
+      link: "./projects/portfolio",
+    },
+    {
+      title: "Todo App",
+      desc: "Incididunt in cillum magna occaecat nisi qui in exercitation labore anim adipisicing amet irure tempor.",
+      link: "./projects/todo",
+    },
+    {
+      title: "Chatflow Landing",
+      desc: "Incididunt in cillum magna occaecat nisi qui in exercitation labore anim adipisicing amet irure tempor.",
+      link: "./projects/chatflow",
+    },
+    {
+      title: "SPPD App",
+      desc: "Incididunt in cillum magna occaecat nisi qui in exercitation labore anim adipisicing amet irure tempor.",
+      lnk: "./projects/sppd",
+    },
+  ];
+
   return (
     <section className="section-work">
       <div className="container">
         <div className="work">
           <div className="work-container">
-            <div className="work-item">
-              <h3>
-                <a href="./projects/inventory" className="btn">
-                  Inventory Management
-                </a>
-              </h3>
-              <p>
-                Lid est laborum et dolorum fuga. Et harum quidem rerum facilis
-                est et expeditasi distinctio. Nam libero tempore.
-              </p>
-              <a href="./projects/inventory" className="link link--arrowed">
-                <span>Read more</span>
-                <svg
-                  class="arrow-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="26"
-                  viewBox="0 0 32 32"
-                >
-                  <g
-                    fill="none"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+            {lists.map((item, index) => (
+              <div className="work-item" key={index}>
+                <h3>
+                  <a href={item.link} className="btn">
+                    {item.title}
+                  </a>
+                </h3>
+                <p>{item.desc}</p>
+                <a href={item.link} className="link link--arrowed">
+                  <span>Read more</span>
+                  <svg
+                    class="arrow-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 32 32"
                   >
-                    <circle
-                      class="arrow-icon--circle"
-                      cx="16"
-                      cy="16"
-                      r="15.12"
-                    ></circle>
-                    <path
-                      class="arrow-icon--arrow"
-                      d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"
-                    ></path>
-                  </g>
-                </svg>
-              </a>
-            </div>
-
-            <div className="work-item">
-              <h3>
-                <a href="./projects/portfolio" className="btn">
-                  Portfolio Website
+                    <g
+                      fill="none"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                      stroke-miterlimit="10"
+                    >
+                      <circle
+                        class="arrow-icon--circle"
+                        cx="16"
+                        cy="16"
+                        r="15.12"
+                      ></circle>
+                      <path
+                        class="arrow-icon--arrow"
+                        d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"
+                      ></path>
+                    </g>
+                  </svg>
                 </a>
-              </h3>
-              <p>
-                Incididunt in cillum magna occaecat nisi qui in exercitation
-                labore anim adipisicing amet irure tempor.
-              </p>
-              <a href="./projects/portfolio" className="link link--arrowed">
-                <span>Read more</span>
-                <svg
-                  class="arrow-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="26"
-                  viewBox="0 0 32 32"
-                >
-                  <g
-                    fill="none"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
-                  >
-                    <circle
-                      class="arrow-icon--circle"
-                      cx="16"
-                      cy="16"
-                      r="15.12"
-                    ></circle>
-                    <path
-                      class="arrow-icon--arrow"
-                      d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"
-                    ></path>
-                  </g>
-                </svg>
-              </a>
-            </div>
-
-            <div className="work-item">
-              <h3>
-                <a href="./projects/todo" className="btn">
-                  Todo App
-                </a>
-              </h3>
-              <p>
-                Incididunt in cillum magna occaecat nisi qui in exercitation
-                labore anim adipisicing amet irure tempor.
-              </p>
-              <a href="./projects/todo" className="link link--arrowed">
-                <span>Read more</span>
-                <svg
-                  class="arrow-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="26"
-                  viewBox="0 0 32 32"
-                >
-                  <g
-                    fill="none"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
-                  >
-                    <circle
-                      class="arrow-icon--circle"
-                      cx="16"
-                      cy="16"
-                      r="15.12"
-                    ></circle>
-                    <path
-                      class="arrow-icon--arrow"
-                      d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"
-                    ></path>
-                  </g>
-                </svg>
-              </a>
-            </div>
-
-            <div className="work-item">
-              <h3>
-                <a href="./projects/chatflow" className="btn">
-                  Chatflow Landing
-                </a>
-              </h3>
-              <p>
-                Incididunt in cillum magna occaecat nisi qui in exercitation
-                labore anim adipisicing amet irure tempor.
-              </p>
-              <a href="./projects/chatflow" className="link link--arrowed">
-                <span>Read more</span>
-                <svg
-                  class="arrow-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="26"
-                  viewBox="0 0 32 32"
-                >
-                  <g
-                    fill="none"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
-                  >
-                    <circle
-                      class="arrow-icon--circle"
-                      cx="16"
-                      cy="16"
-                      r="15.12"
-                    ></circle>
-                    <path
-                      class="arrow-icon--arrow"
-                      d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"
-                    ></path>
-                  </g>
-                </svg>
-              </a>
-            </div>
-
-            <div className="work-item">
-              <h3>
-                <a href="./projects/sppd" className="btn">
-                  SPPD App
-                </a>
-              </h3>
-              <p>
-                Incididunt in cillum magna occaecat nisi qui in exercitation
-                labore anim adipisicing amet irure tempor.
-              </p>
-              <a href="./projects/sppd" className="link link--arrowed">
-                <span>Read more</span>
-                <svg
-                  class="arrow-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="26"
-                  viewBox="0 0 32 32"
-                >
-                  <g
-                    fill="none"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
-                  >
-                    <circle
-                      class="arrow-icon--circle"
-                      cx="16"
-                      cy="16"
-                      r="15.12"
-                    ></circle>
-                    <path
-                      class="arrow-icon--arrow"
-                      d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"
-                    ></path>
-                  </g>
-                </svg>
-              </a>
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
