@@ -23,7 +23,7 @@ const Work = () => {
     {
       title: "SPPD App",
       desc: "Incididunt in cillum magna occaecat nisi qui in exercitation labore anim adipisicing amet irure tempor.",
-      lnk: "./projects/sppd",
+      link: "./projects/sppd",
     },
   ];
 
