@@ -5,7 +5,7 @@ import Footer from "../components/footer";
 const Layout = (props) => {
   return (
     <>
-      <Title title="Yanda Agil | Projects" />
+      <Title title="Projects" />
 
       <section className="hero">
         <div className="container work">

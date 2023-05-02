@@ -7,7 +7,7 @@ const Hero = () => {
             className="head-title glitch is-glitching"
             data-text="Hi! I'm Yanda Agil,"
           >
-            Hi! I&apos;m Yanda Agil, <br /> a front-end web developer based in
+            Hi! I&apos;m Yanda Agil, <br /> A front-end developer based in
             Indonesia.
           </h1>
           <p className="head-desc">

@@ -15,14 +15,14 @@ const Footer = () => {
               LinkedIn
             </a>
             <a
-              href="https://github.com/yandaagil"
+              href="https://www.github.com/yandaagil"
               className="btn"
               target="__blank"
             >
               GitHub
             </a>
             <a
-              href="https://www.instagram.com/yandaagil/"
+              href="https://www.instagram.com/yandaagil"
               className="btn"
               target="__blank"
             >

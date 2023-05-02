@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Karla:wght@400;600;700&display=swap');
 
 :root {
-	--text-selection: white;
+	--text-selection: rgb(233, 233, 233);
 	--font-karla: 'Karla', sans-serif;
 	--font-inter: 'Inter', sans-serif;
-	--c-background: black;
-	--c-text: white;
+	--c-background: rgb(10, 10, 10);
+	--c-text: rgb(233, 233, 233);
 	--c-text-grey: grey;
 	--c-grey: #ccc;
 }
@@ -334,10 +334,14 @@ a[href] {
 					flex-direction: column;
 					align-items: center;
 
-					p {
+					.para {
 						margin-top: 0;
 						margin-bottom: 40px;
 						color: var(--c-text);
+
+						&.bot {
+							margin-bottom: 40px;
+						}
 					}
 
 					.button {
