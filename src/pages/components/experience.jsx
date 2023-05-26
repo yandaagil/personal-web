@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Experience = () => {
   return (
     <section className="section-experience">
@@ -11,8 +13,16 @@ const Experience = () => {
               <li>
                 <h2>IT Staff and Web Developer</h2>
                 <h4>
-                  Dinas Komunikasi dan Informatika Kabupaten Karanganyar •
-                  Internship
+                  <Link
+                    href="https://diskominfo.karanganyarkab.go.id/"
+                    className="place"
+                    target="__blank"
+                  >
+                    <span>
+                      Dinas Komunikasi dan Informatika Kabupaten Karanganyar
+                    </span>
+                  </Link>{" "}
+                  • Internship
                 </h4>
                 <h5>Oct 2022 - Nov 2022</h5>
                 <p>
@@ -24,7 +34,16 @@ const Experience = () => {
               </li>
               <li className="last">
                 <h2>Front-End Engineer</h2>
-                <h4>Ruangguru • Apprenticeship</h4>
+                <h4>
+                  <Link
+                    href="https://www.ruangguru.com/"
+                    className="place"
+                    target="__blank"
+                  >
+                    <span>Ruangguru</span>
+                  </Link>{" "}
+                  • Apprenticeship
+                </h4>
                 <h5>Feb 2022 - Jul 2022</h5>
                 <p>
                   Lid est laborum et dolorum fuga. Et harum quidem rerum facilis

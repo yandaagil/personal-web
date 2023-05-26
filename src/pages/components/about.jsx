@@ -21,7 +21,7 @@ const About = () => {
             <a
               class="button"
               target="__blank"
-              href="https://github.com/yandaagil/personal-web/blob/main/public/cv.pdf"
+              href="https://drive.google.com/file/d/1B2nevIzuf9_NYv6RHb03qFpMAodfbWtH/view?usp=sharing"
             >
               Curriculum Vitae
             </a>

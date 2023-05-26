@@ -18,9 +18,9 @@ const Work = () => {
       link: "./projects/todo",
     },
     {
-      title: "Chatflow Landing",
+      title: "Bookshelf App",
       desc: "Incididunt in cillum magna occaecat nisi qui in exercitation labore anim adipisicing amet irure tempor.",
-      link: "./projects/chatflow",
+      link: "./projects/bookshelf",
     },
     {
       title: "SPPD App",
@@ -47,6 +47,13 @@ const Work = () => {
                 </Link>
               </div>
             ))}
+          </div>
+        </div>
+        <div className="work-all">
+          <div className="text-all">
+            <Link href="" className="text">
+              <span>See all projects . . .</span>
+            </Link>
           </div>
         </div>
       </div>

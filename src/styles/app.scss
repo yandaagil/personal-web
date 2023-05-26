@@ -56,7 +56,6 @@ a[href] {
 		}
 
 		.head {
-			
 			.head-title {
 				margin-top: 0;
 				margin-bottom: 0;
@@ -241,7 +240,7 @@ a[href] {
 			.work {
 				display: flex;
 				flex-direction: column;
-				padding: 80px 0 80px 0;
+				padding: 80px 0 0 0;
 
 				.work-container {
 					display: flex;
@@ -329,6 +328,40 @@ a[href] {
 					}
 				}
 			}
+
+			.work-all {
+				margin-left: 2px;
+				padding-bottom: 80px;
+				
+				.text-all {
+					display: flex;
+					padding: 40px;
+					margin: -2px -2px 0 -2px;
+					border: 2px solid var(--c-text);
+
+					.text {
+						display: flex;
+						margin-right: auto;
+						align-items: center;
+
+						&:before {
+							background-color: #fff;
+							content: "";
+							display: inline-block;
+							height: 1px;
+							transition: all .42s cubic-bezier(.25,.8,.25,1);
+							width: 0;
+						}
+
+						&:hover:before {
+							margin-right: 10px;
+							background-color: #fff;
+							width: 3rem;
+						}
+					}
+				}
+
+			}
 		}
 	}
 
@@ -348,18 +381,22 @@ a[href] {
 				flex-direction: row;
 
 				.experience-left {
-					padding: 80px;
+					padding: 80px 80px 80px 0;
 					border-right: 1px solid var(--c-grey);
 
 
 					h2 {
-						margin-top: 0;
+						margin: 0;
 						color: var(--c-text);
+						text-transform: uppercase;
+						letter-spacing: 5px;
+						writing-mode: vertical-lr;
+						transform: rotate(180deg);
 					}
 				}
 
 				.experience-right {
-					padding: 80px 80px 80px 0;
+					padding: 80px 0 80px 0;
 					height: 100%;
 					display: flex;
 					flex-direction: column;
@@ -406,8 +443,23 @@ a[href] {
 							}
 
 							h4 {
-								margin: 0;
+								margin: 0 0 5px;
 								color: var(--c-text-grey);
+
+								.place {
+									padding-bottom: 3px;
+									color: var(--c-text-grey);
+									border-bottom: 1px solid var(--c-text-grey);
+
+									&:hover {
+										color: var(--c-text);
+										border-bottom: 1px solid var(--c-text);
+									}
+
+									&::before {
+										content: "@";
+									}
+								}
 							}
 
 							h5 {
@@ -442,17 +494,20 @@ a[href] {
 				flex-direction: row;
 
 				.about-right {
-					padding: 80px;
+					padding: 80px 0 80px 80px;
 					border-left: 1px solid var(--c-grey);
 
 					h2 {
-						margin-top: 0;
+						margin: 0;
 						color: var(--c-text);
+						writing-mode: vertical-lr;
+						letter-spacing: 5px;
+						text-transform: uppercase;
 					}
 				}
 
 				.about-left {
-					padding: 80px;
+					padding: 80px 80px 80px 0;
 					height: 100%;
 					display: flex;
 					flex-direction: column;
@@ -462,6 +517,7 @@ a[href] {
 						margin-top: 0;
 						margin-bottom: 40px;
 						color: var(--c-text);
+						text-align: center;
 
 						&.bot {
 							margin-bottom: 40px;
@@ -549,6 +605,36 @@ a[href] {
 	}
 }
 
+@media screen and (min-width: 1700px) {
+	.hero .container {
+		width: 60%;
+	}
+
+	.main {
+		.section-work {
+			.container {
+				width: 60%;
+			}
+		}
+
+		.section-experience {
+			.container {
+				width: 60%;
+			}
+		}
+		
+		.section-about {
+			.container {
+				width: 60%;
+			}
+		}
+	}
+
+	.footer .container {
+		width: 60%;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.hero .container {
 		.head {
@@ -581,6 +667,12 @@ a[href] {
 			.experience-left {
 				padding: 80px 0 0 0;
 				border-right: none;
+
+				h2 {
+					writing-mode: horizontal-tb;
+					transform: rotate(0deg);
+					margin-bottom: 40px;
+				}
 			}
 
 			.experience-right {
@@ -602,10 +694,19 @@ a[href] {
 			.about-right {
 				padding: 80px 0 0 0;
 				border-left: none;
+
+				h2 {
+					writing-mode: horizontal-tb;
+					margin-bottom: 40px;
+				}
 			}
 
 			.about-left {
 				padding: 0 0 80px 0;
+
+				.para {
+					text-align: start;
+				}
 			}
 		}
 	}
@@ -656,6 +757,12 @@ a[href] {
 			.experience-left {
 				padding: 80px 0 0 0;
 				border-right: none;
+
+				h2 {
+					writing-mode: horizontal-tb;
+					transform: rotate(0deg);
+					margin-bottom: 40px;
+				}
 			}
 
 			.experience-right {
@@ -673,10 +780,19 @@ a[href] {
 			.about-right {
 				padding: 80px 0 0 0;
 				border-left: none;
+
+				h2 {
+					writing-mode: horizontal-tb;
+					margin-bottom: 40px;
+				}
 			}
 
 			.about-left {
 				padding: 0 0 80px 0;
+
+				.para {
+					text-align: start;
+				}
 			}
 		}
 	}
