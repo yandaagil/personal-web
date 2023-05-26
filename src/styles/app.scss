@@ -45,7 +45,7 @@ a[href] {
 
 	.container {
 		width: 80%;
-		height: 100vh;
+		min-height: 100vh;
 		margin: 0 auto 0 auto;
 		display: flex;
 		flex-direction: column;
@@ -181,7 +181,7 @@ a[href] {
 
 				.li {
 					counter-increment: steps;
-					padding-left: 80px;
+					padding-left: 40px;
 					padding-bottom: 40px;
 					color: var(--c-text);
 					position: relative;
@@ -209,39 +209,66 @@ a[href] {
 						color: var(--c-background);
 					}
 
-					h3 {
-						margin: 0;
+					.main-title {
+						display: flex;
+						align-items: center;
 						
-						.title {
-							padding-bottom: 0.2rem;
-							color: var(--c-text);
-							cursor: pointer;
-							position: relative;
-							transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-							transition-duration: 400ms;
-							transition-property: color;
-	
-							&:hover, &:focus {
+						h3 {
+							margin: 0;
+
+							.title {
+								padding-bottom: 0.2rem;
 								color: var(--c-text);
-							}
-	
-							&:focus:after, &:hover:after {
-								width: 100%;
-								left: 0%;
-							}
-	
-							&:after {
-								content: "";
-								pointer-events: none;
-								bottom: -2px;
-								left: 50%;
-								position: absolute;
-								width: 0%;
-								height: 1px;
-								background-color: #fff;
+								cursor: pointer;
+								position: relative;
 								transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
 								transition-duration: 400ms;
-								transition-property: width, left;
+								transition-property: color;
+		
+								&:hover, &:focus {
+									color: var(--c-text);
+								}
+		
+								&:focus:after, &:hover:after {
+									width: 100%;
+									left: 0%;
+								}
+		
+								&:after {
+									content: "";
+									pointer-events: none;
+									bottom: -2px;
+									left: 50%;
+									position: absolute;
+									width: 0%;
+									height: 1px;
+									background-color: #fff;
+									transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+									transition-duration: 400ms;
+									transition-property: width, left;
+								}
+							}
+						}
+
+						.github {
+							margin-left: 20px;
+							display: flex;
+							align-items: center;
+							color: var(--c-text-grey);
+
+							&:hover {
+								color: var(--c-text);
+							}
+						}
+
+						.arrow {
+							margin-left: 10px;
+							display: flex;
+							align-items: center;
+							color: var(--c-text-grey);
+
+							&:hover {
+								color: var(--c-text);
 							}
 						}
 					}
@@ -253,7 +280,7 @@ a[href] {
 			}
 
 			.project-title {
-				margin-bottom: 10px;
+				margin: 0 0 10px 0;
 				font-family: var(--font-inter);
 				font-weight: 700;
 				font-size: 4rem;
@@ -560,11 +587,9 @@ a[href] {
 								.place {
 									padding-bottom: 3px;
 									color: var(--c-text-grey);
-									border-bottom: 1px solid var(--c-text-grey);
 
 									&:hover {
 										color: var(--c-text);
-										border-bottom: 1px solid var(--c-text);
 									}
 
 									&::before {
@@ -574,7 +599,7 @@ a[href] {
 							}
 
 							h5 {
-								margin: 0;
+								margin: 0 0 10px;
 								color: var(--c-text-grey);
 								font-style: italic;
 							}

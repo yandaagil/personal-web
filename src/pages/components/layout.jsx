@@ -28,7 +28,7 @@ const Layout = (props) => {
                 </Link>
               </li>
             </ul>
-            <h className="project-title">{props.title}</h>
+            <h3 className="project-title">{props.title}</h3>
             <div className="button-container">
               <Link href="" className="button" target="__blank">
                 Repository{" "}
