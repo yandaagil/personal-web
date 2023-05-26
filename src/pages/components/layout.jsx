@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Title from "./title";
 import Footer from "../components/footer";
+import { GithubLogo, ArrowSquareOut } from "@phosphor-icons/react";
 
 const Layout = (props) => {
   return (
@@ -28,15 +29,21 @@ const Layout = (props) => {
               </li>
             </ul>
             <h className="project-title">{props.title}</h>
-            <p className="project-desc">{props.desc}</p>
             <div className="button-container">
               <Link href="" className="button" target="__blank">
-                Source Code
+                Repository{" "}
+                <span>
+                  <GithubLogo size={20} />
+                </span>
               </Link>
               <Link href="" className="button preview" target="__blank">
-                Live Preview
+                Live Preview{" "}
+                <span>
+                  <ArrowSquareOut size={20} />
+                </span>
               </Link>
             </div>
+            <p className="project-desc">{props.desc}</p>
           </div>
         </div>
       </section>

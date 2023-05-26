@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { useState } from "react";
+import { GithubLogo, ArrowSquareOut } from "@phosphor-icons/react";
 
 const Work = () => {
   const lists = [
@@ -42,16 +44,24 @@ const Work = () => {
                   </Link>
                 </h3>
                 <p>{item.desc}</p>
-                <Link href={item.link} className="btn-read">
-                  <span>Read more</span>
-                </Link>
+                <div className="links">
+                  <Link href={item.link} className="btn-read">
+                    <span>Read more</span>
+                  </Link>
+                  <Link href={item.link} className="github">
+                    <GithubLogo size={20} />
+                  </Link>
+                  <Link href={item.link} className="arrow">
+                    <ArrowSquareOut size={20} />
+                  </Link>
+                </div>
               </div>
             ))}
           </div>
         </div>
         <div className="work-all">
           <div className="text-all">
-            <Link href="" className="text">
+            <Link href="/projects" className="text">
               <span>See all projects . . .</span>
             </Link>
           </div>

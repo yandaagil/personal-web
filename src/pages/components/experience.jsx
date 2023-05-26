@@ -10,7 +10,7 @@ const Experience = () => {
           </div>
           <div className="experience-right">
             <ol>
-              <li>
+              <li className="lists">
                 <h2>IT Staff and Web Developer</h2>
                 <h4>
                   <Link
@@ -25,14 +25,13 @@ const Experience = () => {
                   • Internship
                 </h4>
                 <h5>Oct 2022 - Nov 2022</h5>
-                <p>
-                  Lid est laborum et dolorum fuga. Et harum quidem rerum facilis
-                  est et expeditasi distinctio. Nam libero tempore. Lid est
-                  laborum et dolorum fuga. Et harum quidem rerum facilis est et
-                  expeditasi distinctio. Nam libero tempore.
-                </p>
+                <ul>
+                  <li>Develop SPPD Web Application.</li>
+                  <li>Maintaining DISKOMINFO website.</li>
+                  <li>Optimize website performance.</li>
+                </ul>
               </li>
-              <li className="last">
+              <li className="lists last">
                 <h2>Front-End Engineer</h2>
                 <h4>
                   <Link
@@ -45,12 +44,17 @@ const Experience = () => {
                   • Apprenticeship
                 </h4>
                 <h5>Feb 2022 - Jul 2022</h5>
-                <p>
-                  Lid est laborum et dolorum fuga. Et harum quidem rerum facilis
-                  est et expeditasi distinctio. Nam libero tempore. Lid est
-                  laborum et dolorum fuga. Et harum quidem rerum facilis est et
-                  expeditasi distinctio. Nam libero tempore.
-                </p>
+                <ul>
+                  <li>
+                    Build responsive and interactive website applications using
+                    the ReactJS framework.
+                  </li>
+                  <li>
+                    Website and earch engine optimization using SEO and Web
+                    Performance.
+                  </li>
+                  <li>Create API and Consume API.</li>
+                </ul>
               </li>
             </ol>
           </div>
