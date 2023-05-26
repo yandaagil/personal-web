@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Work = () => {
   const lists = [
     {
@@ -35,40 +37,14 @@ const Work = () => {
             {lists.map((item, index) => (
               <div className="work-item" key={index}>
                 <h3>
-                  <a href={item.link} className="btn">
-                    {item.title}
-                  </a>
+                  <Link href={item.link} className="btn">
+                    <span>{item.title}</span>
+                  </Link>
                 </h3>
                 <p>{item.desc}</p>
-                <a href={item.link} className="link link--arrowed">
+                <Link href={item.link} className="btn-read">
                   <span>Read more</span>
-                  <svg
-                    class="arrow-icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 32 32"
-                  >
-                    <g
-                      fill="none"
-                      stroke="white"
-                      stroke-width="1.5"
-                      stroke-linejoin="round"
-                      stroke-miterlimit="10"
-                    >
-                      <circle
-                        class="arrow-icon--circle"
-                        cx="16"
-                        cy="16"
-                        r="15.12"
-                      ></circle>
-                      <path
-                        class="arrow-icon--arrow"
-                        d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"
-                      ></path>
-                    </g>
-                  </svg>
-                </a>
+                </Link>
               </div>
             ))}
           </div>

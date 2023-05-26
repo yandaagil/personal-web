@@ -1,6 +1,7 @@
 import Title from "./components/title";
 import Hero from "./components/hero";
 import Work from "./components/work";
+import Experience from "./components/experience";
 import About from "./components/about";
 import Footer from "./components/footer";
 
@@ -13,6 +14,7 @@ export default function Home() {
 
       <main className="main">
         <Work />
+        <Experience />
         <About />
       </main>
 

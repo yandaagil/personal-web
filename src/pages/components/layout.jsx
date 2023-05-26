@@ -5,14 +5,28 @@ import Footer from "../components/footer";
 const Layout = (props) => {
   return (
     <>
-      <Title title="Projects" />
+      <Title title={props.title} />
 
       <section className="hero">
         <div className="container work">
           <div className="project">
-            <Link href="/" className="back">
-              <span>Back to Home</span>
-            </Link>
+            <ul className="breadcrumbs">
+              <li className="breadcrumbs-item first">
+                <Link href="/" className="breadcrumbs-content">
+                  <span>Home</span>
+                </Link>
+              </li>
+              <li className="breadcrumbs-item">
+                <Link href="/projects" className="breadcrumbs-content">
+                  <span>Projects</span>
+                </Link>
+              </li>
+              <li className="breadcrumbs-item">
+                <Link href="" className="breadcrumbs-content">
+                  <span>{props.title}</span>
+                </Link>
+              </li>
+            </ul>
             <h className="project-title">{props.title}</h>
             <p className="project-desc">{props.desc}</p>
             <div className="button-container">

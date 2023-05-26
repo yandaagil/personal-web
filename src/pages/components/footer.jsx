@@ -29,12 +29,7 @@ const Footer = () => {
               Instagram
             </a>
           </div>
-          <p>
-            Copyright © MMXXIII @yandaagil • Created with{" "}
-            <a href="https://nextjs.org/" className="btn" target="__blank">
-              NextJS
-            </a>
-          </p>
+          <p>Made with ♡ by Yanda Agil • All Rights Reserved</p>
         </div>
       </div>
     </footer>

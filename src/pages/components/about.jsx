@@ -4,9 +4,6 @@ const About = () => {
       <div className="container">
         <div className="about">
           <div className="about-left">
-            <h2>About</h2>
-          </div>
-          <div className="about-right">
             <p className="para">
               I am a final year student majoring in Informatics Engineering with
               a focus on Front-end development. Skilled in HTML, CSS,
@@ -28,6 +25,9 @@ const About = () => {
             >
               Curriculum Vitae
             </a>
+          </div>
+          <div className="about-right">
+            <h2>About</h2>
           </div>
         </div>
       </div>
