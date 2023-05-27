@@ -9,9 +9,11 @@ const Hero = () => {
           >
             Hi! I&apos;m Yanda Agil
           </h1>
-          <p className="head-desc">
-            a Front-End Web Developer based in Indonesia
-          </p>
+          <div className="tags">
+            <p className="head-desc">
+              a Front-End Web Developer based in <span>Indonesia</span>
+            </p>
+          </div>
           <p className="head-desc2">
             I am a Web Developer focusing on Front-End and Web Applications.
           </p>

@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Karla:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Jura:wght@300;400;500;600;700&family=Karla:wght@400;600;700&display=swap');
 
 :root {
 	--text-selection: #e9e9e9;
 	--font-karla: 'Karla', sans-serif;
 	--font-inter: 'Inter', sans-serif;
+	--font-jura: 'Jura', sans-serif;
 	--c-background: #0a0a0a;
 	--c-text: #e9e9e9;
 	--c-text-grey: #808080;
@@ -61,9 +62,10 @@ a[href] {
 				margin-bottom: 0;
 				font-size: 6rem;
 				font-family: var(--font-inter);
-				font-weight: 700;
+				font-weight: 600;
 				color: var(--c-text);
 				text-align: end;
+				// text-transform: uppercase;
 
 				&.glitch {
 					position: relative;
@@ -119,19 +121,34 @@ a[href] {
 				}
 			}
 
-			.head-desc {
-				margin-top: 0;
-				font-size: 2.25rem;
-				font-family: var(--font-inter);
-				font-weight: 700;
-				color: var(--c-text-grey);
-				text-align: end;
+			.tags {
+				display: flex;
+				align-items: end;
+
+				.head-desc {
+					margin-left: auto;
+					margin-top: 0;
+					margin-bottom: 2.75rem;
+					padding: 0 10px 0 10px;
+					font-size: 1.5rem;
+					font-family: var(--font-jura);
+					font-weight: 700;
+					text-transform: uppercase;
+					color: var(--c-background);
+					text-align: end;
+					background-color: var(--c-text);
+
+					span {
+						color: red;
+					}
+				}
 			}
 			
 			.head-desc2 {
 				margin-top: 0;
-				font-size: 1.75rem;
+				font-size: 1.25rem;
 				font-family: var(--font-inter);
+				text-transform: uppercase;
 				color: var(--c-text-grey);
 				text-align: end;
 			}
@@ -141,7 +158,7 @@ a[href] {
 			display: flex;
 			flex-direction: column;
 			padding: 20px 80px 80px 80px;
-			height: 100%;
+			min-height: inherit;
 			border-left: 1px solid var(--c-grey);
 
 			.breadcrumbs {
@@ -700,36 +717,12 @@ a[href] {
 				align-items: center;
 
 				.btn {
-					margin-right: 15px;
+					display: flex;
+					align-items: center;
+					margin-right: 25px;
 					color: var(--c-text);
 					cursor: pointer;
 					position: relative;
-					transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-					transition-duration: 400ms;
-					transition-property: color;
-
-					&:hover, &:focus {
-						color: var(--c-text);
-					}
-
-					&:focus:after, &:hover:after {
-						width: 100%;
-						left: 0%;
-					}
-
-					&:after {
-						content: "";
-						pointer-events: none;
-						bottom: -2px;
-						left: 50%;
-						position: absolute;
-						width: 0%;
-						height: 1px;
-						background-color: #fff;
-						transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-						transition-duration: 400ms;
-						transition-property: width, left;
-					}
 				}
 			}
 
@@ -779,15 +772,15 @@ a[href] {
 	.hero .container {
 		.head {
 			.head-title {
-				font-size: 3.5rem;
+				font-size: 3.75rem;
 			}
 
-			.head-desc {
-				font-size: 1.75rem;
+			.tags .head-desc {
+				font-size: 1.25rem;
 			}
 
 			.head-desc2 {
-				font-size: 1.25rem;
+				font-size: 1.15rem;
 			}
 		}
 
@@ -856,18 +849,6 @@ a[href] {
 			}
 		}
 	}
-
-	.footer {
-		.container {
-			.content {
-				flex-direction: column;
-	
-				p {
-					margin-bottom: 0;
-				}
-			}
-		}
-	}
 }
 
 @media screen and (max-width: 555px) {
@@ -880,8 +861,8 @@ a[href] {
 				font-size: 2rem;
 			}
 
-			.head-desc {
-				font-size: 1.25rem;
+			.tags .head-desc {
+				font-size: 1rem;
 			}
 
 			.head-desc2 {
