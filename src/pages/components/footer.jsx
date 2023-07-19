@@ -12,28 +12,28 @@ const Footer = () => {
         <div className="content">
           <div className="button-container">
             <a href="mailto:yandaagil@gmail.com" className="btn" target="">
-              <EnvelopeSimpleOpen size={20} color="#e9e9e9" />
+              <EnvelopeSimpleOpen size={20} />
             </a>
             <a
               href="https://www.linkedin.com/in/yandaagil/"
               className="btn"
               target="__blank"
             >
-              <LinkedinLogo size={20} color="#e9e9e9" />
+              <LinkedinLogo size={20} />
             </a>
             <a
               href="https://www.github.com/yandaagil"
               className="btn"
               target="__blank"
             >
-              <GithubLogo size={20} color="#e9e9e9" />
+              <GithubLogo size={20} />
             </a>
             <a
               href="https://www.instagram.com/yandaagil"
               className="btn"
               target="__blank"
             >
-              <InstagramLogo size={20} color="#e9e9e9" />
+              <InstagramLogo size={20} />
             </a>
           </div>
           <p>@yandaagil</p>

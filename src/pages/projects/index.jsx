@@ -28,14 +28,18 @@ const Projects = (props) => {
               <li className="li">
                 <div className="main-title">
                   <h3>
-                    <Link href="" className="title">
+                    <Link href="./projects/inventory" className="title">
                       Inventory Management
                     </Link>
                   </h3>
-                  <Link href="" className="github">
+                  <Link
+                    href="https://github.com/yandaagil/inventory-management"
+                    className="github"
+                    target="__blank"
+                  >
                     <GithubLogo size={20} />
                   </Link>
-                  <Link href="" className="arrow">
+                  <Link href="" className="arrow" target="__blank">
                     <ArrowSquareOut size={20} />
                   </Link>
                 </div>
@@ -48,14 +52,14 @@ const Projects = (props) => {
               <li className="li">
                 <div className="main-title">
                   <h3>
-                    <Link href="" className="title">
+                    <Link href="./projects/portfolio" className="title">
                       Portfolio Website
                     </Link>
                   </h3>
-                  <Link href="" className="github">
+                  <Link href="" className="github" target="__blank">
                     <GithubLogo size={20} />
                   </Link>
-                  <Link href="" className="arrow">
+                  <Link href="" className="arrow" target="__blank">
                     <ArrowSquareOut size={20} />
                   </Link>
                 </div>
@@ -69,14 +73,22 @@ const Projects = (props) => {
               <li className="li">
                 <div className="main-title">
                   <h3>
-                    <Link href="" className="title">
+                    <Link href="./projects/todo" className="title">
                       Todo App
                     </Link>
                   </h3>
-                  <Link href="" className="github">
+                  <Link
+                    href="https://github.com/yandaagil/todoapps"
+                    className="github"
+                    target="__blank"
+                  >
                     <GithubLogo size={20} />
                   </Link>
-                  <Link href="" className="arrow">
+                  <Link
+                    href="https://todoapps-yanda.vercel.app/"
+                    className="arrow"
+                    target="__blank"
+                  >
                     <ArrowSquareOut size={20} />
                   </Link>
                 </div>
@@ -90,14 +102,22 @@ const Projects = (props) => {
               <li className="li">
                 <div className="main-title">
                   <h3>
-                    <Link href="" className="title">
+                    <Link href="./projects/bookshelf" className="title">
                       Bookshelf App
                     </Link>
                   </h3>
-                  <Link href="" className="github">
+                  <Link
+                    href="https://github.com/yandaagil/bookshelf-app"
+                    className="github"
+                    target="__blank"
+                  >
                     <GithubLogo size={20} />
                   </Link>
-                  <Link href="" className="arrow">
+                  <Link
+                    href="https://bookshelf-app-yanda.vercel.app/"
+                    className="arrow"
+                    target="__blank"
+                  >
                     <ArrowSquareOut size={20} />
                   </Link>
                 </div>
@@ -111,14 +131,14 @@ const Projects = (props) => {
               <li className="li last">
                 <div className="main-title">
                   <h3>
-                    <Link href="" className="title">
+                    <Link href="./projects/sppd" className="title">
                       SPPD App
                     </Link>
                   </h3>
-                  <Link href="" className="github">
+                  <Link href="" className="github" target="__blank">
                     <GithubLogo size={20} />
                   </Link>
-                  <Link href="" className="arrow">
+                  <Link href="" className="arrow" target="__blank">
                     <ArrowSquareOut size={20} />
                   </Link>
                 </div>

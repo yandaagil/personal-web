@@ -65,7 +65,6 @@ a[href] {
 				font-weight: 600;
 				color: var(--c-text);
 				text-align: end;
-				// text-transform: uppercase;
 
 				&.glitch {
 					position: relative;
@@ -561,7 +560,7 @@ a[href] {
 						margin: 0;
 						padding-left: 0;
 						list-style: none;
-  					counter-reset: steps;
+						counter-reset: steps;
 
 						.lists {
 							counter-increment: steps;
@@ -580,11 +579,11 @@ a[href] {
 							&::before {
 								display: flex;
 								align-items: center;
-  							justify-content: center;
+								justify-content: center;
 								content: counter(steps);
 								margin: 0;
 								position: absolute;
-    						left: -1.10rem;
+								left: -1.10rem;
 								width: 1.5rem;
 								padding: 5px;
 								margin-right: 0;
@@ -723,6 +722,10 @@ a[href] {
 					color: var(--c-text);
 					cursor: pointer;
 					position: relative;
+
+					&:hover {
+						color: var(--c-text-grey);
+					}
 				}
 			}
 
