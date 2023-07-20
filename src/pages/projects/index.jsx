@@ -44,9 +44,10 @@ const Projects = () => {
                   </Link>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-                  totam libero. Dolorem, dolore illum accusantium eligendi
-                  similique debitis ducimus inventore.
+                  An Inventory Management where you can manage your goods,
+                  adding and removing goods, manage stock, view history per
+                  item. Made with PHP Native. This is a final project for my
+                  Pemrograman Web Dinamis subject in college.
                 </p>
               </li>
               <li className="li">
@@ -93,10 +94,9 @@ const Projects = () => {
                   </Link>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Soluta, eligendi voluptatum fugit ipsam, quam fuga deleniti,
-                  nesciunt sit aliquam suscipit enim. Minima facilis nihil sed
-                  iusto voluptatibus. Nam, iure voluptatibus.
+                  A very simple to do list app made with HTML and JavaScript and
+                  styled with CSS. This is a learning outcome from Dicoding
+                  Academy.
                 </p>
               </li>
               <li className="li">
@@ -122,10 +122,9 @@ const Projects = () => {
                   </Link>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Soluta, eligendi voluptatum fugit ipsam, quam fuga deleniti,
-                  nesciunt sit aliquam suscipit enim. Minima facilis nihil sed
-                  iusto voluptatibus. Nam, iure voluptatibus.
+                  A very simple bookshelf app where you can store your read,
+                  made with HTML and JavaScript styled with Bootstrap. This is a
+                  learning outcome from Dicoding Academy.
                 </p>
               </li>
               <li className="li last">

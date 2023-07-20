@@ -4,7 +4,7 @@ const Inventory = () => {
   return (
     <Layout
       title="Inventory Management"
-      desc="Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore. Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore. Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore. Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore. Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore. Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore."
+      desc="An Inventory Management where you can manage your goods, adding and removing goods, manage stock, view history per item. Made with PHP Native. This is a final project for my Pemrograman Web Dinamis subject in college."
       repo="https://github.com/yandaagil/inventory-management"
       web=""
     />

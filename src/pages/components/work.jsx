@@ -5,7 +5,7 @@ const Work = () => {
   const lists = [
     {
       title: "Inventory Management",
-      desc: "Lid est laborum et dolorum fuga. Et harum quidem rerum facilis est et expeditasi distinctio. Nam libero tempore.",
+      desc: "An Inventory Management where you can manage your goods, adding and removing goods, manage stock, view history per item. Made with PHP Native.",
       link: "./projects/inventory",
       repo: "https://github.com/yandaagil/inventory-management",
       web: "",
@@ -19,14 +19,14 @@ const Work = () => {
     },
     {
       title: "Todo App",
-      desc: "Incididunt in cillum magna occaecat nisi qui in exercitation labore anim adipisicing amet irure tempor.",
+      desc: "A very simple to do list app made with HTML and JavaScript and styled with CSS.",
       link: "./projects/todo",
       repo: "https://github.com/yandaagil/todoapps",
       web: "https://todoapps-yanda.vercel.app/",
     },
     {
       title: "Bookshelf App",
-      desc: "Incididunt in cillum magna occaecat nisi qui in exercitation labore anim adipisicing amet irure tempor.",
+      desc: "A very simple bookshelf app where you can store your read, made with HTML and JavaScript styled with Bootstrap.",
       link: "./projects/bookshelf",
       repo: "https://github.com/yandaagil/bookshelf-app",
       web: "https://bookshelf-app-yanda.vercel.app/",

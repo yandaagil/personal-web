@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Title from "./title";
 import Footer from "../components/footer";
 import { GithubLogo, ArrowSquareOut } from "@phosphor-icons/react";
@@ -48,6 +49,7 @@ const Layout = (props) => {
               </Link>
             </div>
             <p className="project-desc">{props.desc}</p>
+            <Image className="image" src={props.image ?? ""} alt="Todo App" />
           </div>
         </div>
       </section>
