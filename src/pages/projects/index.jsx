@@ -3,7 +3,7 @@ import Title from "../components/title";
 import Footer from "../components/footer";
 import { GithubLogo, ArrowSquareOut } from "@phosphor-icons/react";
 
-const Projects = (props) => {
+const Projects = () => {
   return (
     <>
       <Title title="Projects" />

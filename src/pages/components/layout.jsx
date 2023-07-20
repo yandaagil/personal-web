@@ -30,14 +30,14 @@ const Layout = (props) => {
             </ul>
             <h3 className="project-title">{props.title}</h3>
             <div className="button-container">
-              <Link href={props.repo} className="button" target="__blank">
+              <Link href={props.repo ?? ""} className="button" target="__blank">
                 Repository{" "}
                 <span>
                   <GithubLogo size={20} />
                 </span>
               </Link>
               <Link
-                href={props.web}
+                href={props.web ?? ""}
                 className="button preview"
                 target="__blank"
               >
