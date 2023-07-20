@@ -19,7 +19,7 @@ const About = () => {
               front-end development.
             </p>
             <a
-              class="button"
+              className="button"
               target="__blank"
               href="https://drive.google.com/file/d/1B2nevIzuf9_NYv6RHb03qFpMAodfbWtH/view?usp=sharing"
             >
