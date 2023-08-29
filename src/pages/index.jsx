@@ -12,7 +12,7 @@ export default function Home() {
 
       <Hero />
 
-      <main className="main">
+      <main>
         <Work />
         <Experience />
         <About />
