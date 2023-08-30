@@ -1,12 +1,13 @@
-import Layout from "../components/layout";
+import Layout from "../components/projectDetail";
 
 const Inventory = () => {
   return (
     <Layout
       title="Inventory Management"
-      desc="An Inventory Management where you can manage your goods, adding and removing goods, manage stock, view history per item. Made with PHP Native. This is a final project for my Pemrograman Web Dinamis subject in college."
+      desc="A PHP native and MySQL-based inventory management application with features for adding incoming items, recording outgoing items, efficiently managing stock levels, and maintaining a comprehensive history of item movements for each product."
       repo="https://github.com/yandaagil/inventory-management"
       web=""
+      image=""
     />
   );
 };

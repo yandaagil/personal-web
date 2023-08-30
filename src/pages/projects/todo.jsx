@@ -1,11 +1,11 @@
-import Layout from "../components/layout";
+import Layout from "../components/projectDetail";
 import todoapp from "../../../public/todoapp.png";
 
 const Todo = () => {
   return (
     <Layout
       title="Todo App"
-      desc="A very simple to do list app made with HTML and JavaScript and styled with CSS. This is a learning outcome from Dicoding Academy."
+      desc="A simple todo list application crafted using HTML, JavaScript, and Bootstrap. Users can effortlessly input a list of tasks along with their respective dates. As tasks are completed, they can be seamlessly moved to the 'Done' section. This user-friendly application streamlines task management and organization."
       repo="https://github.com/yandaagil/todoapps"
       web="https://todoapps-yanda.vercel.app/"
       image={todoapp}

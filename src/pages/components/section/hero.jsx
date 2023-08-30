@@ -25,10 +25,10 @@ const Hero = () => {
           </ul>
         </div>
         <div>
-          <h1 className="text-3xl font-semibold text-text lg:text-9xl">
+          <h1 className="text-3xl font-semibold text-text lg:text-8xl">
             Hi! I&apos;m Yanda
           </h1>
-          <h1 className="text-3xl font-semibold text-text lg:text-9xl">
+          <h1 className="text-3xl font-semibold text-text lg:text-8xl">
             I make website
           </h1>
           <p className="text-medium text-text lg:text-2xl">
