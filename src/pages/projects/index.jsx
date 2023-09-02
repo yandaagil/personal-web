@@ -32,10 +32,10 @@ const Projects = () => {
             <ol className="ol mt-10">
               {projectLists().map((item, index) => (
                 <li
-                  className={`li pl-10 pb-10 text-text relative border-l-2 border-dashed text-sm before:w-8 lg:text-base lg:before:w-[2.125rem] ${
+                  className={`li pl-10 text-text relative border-l-2 border-dashed text-sm before:w-8 lg:text-base lg:before:w-[2.125rem] ${
                     index === projectLists().length - 1
                       ? "border-background"
-                      : "border-grey "
+                      : "border-grey pb-10"
                   }`}
                   key={index}
                 >
