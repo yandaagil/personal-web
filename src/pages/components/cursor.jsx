@@ -30,8 +30,8 @@ const Cursor = () => {
 
   return (
     <>
-      <div className="inner-cursor"></div>
-      <div className="outer-cursor"></div>
+      <div className="inner-cursor md:cursor-none"></div>
+      <div className="outer-cursor md:cursor-none"></div>
     </>
   );
 };
