@@ -15,7 +15,7 @@ const Layout = (props) => {
       <Title title={props.title} />
 
       <section className="min-h-screen bg-background border-b-[1px] border-solid border-grey">
-        <div className="w-4/5 min-h-screen my-0 mx-auto flex flex-col justify-start">
+        <div className="w-4/5 min-h-screen my-0 mx-auto flex flex-col justify-start lg:w-11/12 2xl:w-7/12">
           <div className="flex flex-col pt-10 pb-20 min-h-screen lg:border-l-[1px] lg:border-solid lg:border-grey lg:px-20">
             <ul className="mb-10 flex list-none p-0 gap-3">
               <li className="text-sm text-textgrey before:content-none before:mr-0 lg:text-base">
