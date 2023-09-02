@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { GithubLogo, ArrowSquareOut } from "@phosphor-icons/react";
-import { projectLists } from "../projectLists.js";
+import { projectLists } from "../projectLists";
 import Tippy from "../tooltip";
 
 const Project = () => {
@@ -42,7 +42,7 @@ const Project = () => {
   //   },
   // ];
   // console.log(projectLists());
-  const data = projectLists();
+
   return (
     <section
       id="work"
@@ -51,7 +51,7 @@ const Project = () => {
       <div className="w-4/5 my-0 mx-auto flex flex-col justify-center 2xl:w-7/12">
         <div className="flex flex-col pt-20 px-0 pb-0">
           <div className="flex flex-row flex-wrap justify-center w-full ml-0.5 mt-0.5">
-            {data.map((item, index) => (
+            {projectLists().map((item, index) => (
               <div
                 className="flex-auto h-auto flex flex-col justify-between p-5 ml-[-2px] mt-[-2px] border-2 border-solid border-text lg:grow lg:shrink lg:basis-1/3 lg:p-10"
                 key={index}
