@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { GithubLogo, ArrowSquareOut } from "@phosphor-icons/react";
-import { projectLists } from "../projectLists";
+import { projectLists } from "../../../projectLists";
 import Tippy from "../tooltip";
 
 const Project = () => {
