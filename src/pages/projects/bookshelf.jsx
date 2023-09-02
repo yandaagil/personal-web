@@ -1,5 +1,5 @@
 import Layout from "../components/projectDetail";
-import bookshelfapp from "../../../public/bookshelfapp.png";
+import bookshelfapp from "../../images/bookshelf/bookshelfapp.png";
 
 const Bookshelf = () => {
   return (

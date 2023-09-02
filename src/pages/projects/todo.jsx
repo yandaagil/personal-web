@@ -1,5 +1,5 @@
 import Layout from "../components/projectDetail";
-import todoapp from "../../../public/todoapp.png";
+import todoapp from "../../images/todo/todoapp.png";
 
 const Todo = () => {
   return (
