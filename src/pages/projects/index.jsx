@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Title from "../components/section/title";
 import Footer from "../components/section/footer";
-import { projectLists } from "../components/projectLists";
+import { projectLists } from "../components/projectLists.js";
 import { GithubLogo, ArrowSquareOut } from "@phosphor-icons/react";
 import Tippy from "../components/tooltip";
 import Cursor from "../components/cursor";
@@ -45,6 +45,7 @@ const Projects = () => {
   //   },
   // ];
 
+  const data = projectLists();
   return (
     <>
       <Title title="Projects" />
@@ -68,7 +69,7 @@ const Projects = () => {
               Projects
             </h3>
             <ol className="ol mt-10">
-              {projectLists.map((item, index) => (
+              {data.map((item, index) => (
                 <li
                   className={`li pl-10 pb-10 text-text relative border-l-2 border-dashed text-sm before:w-8 lg:text-base lg:before:w-[2.125rem] ${
                     index === projectLists.length - 1
