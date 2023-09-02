@@ -3,6 +3,11 @@ import Image from "next/image";
 import Title from "./section/title";
 import Footer from "./section/footer";
 import Cursor from "./cursor";
+import LightGallery from "lightgallery/react";
+import "lightgallery/scss/lightgallery.scss";
+import "lightgallery/scss/lg-zoom.scss";
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
 
 const Layout = (props) => {
   return (
@@ -54,11 +59,13 @@ const Layout = (props) => {
               {props.desc}
             </p>
             {props.image !== "" ? (
-              <Image
-                className="h-auto w-auto"
-                src={props.image}
-                alt="Todo App"
-              />
+              <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
+                <Image
+                  className="h-auto w-auto"
+                  src={props.image}
+                  alt="Todo App"
+                />
+              </LightGallery>
             ) : null}
           </div>
         </div>
