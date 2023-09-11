@@ -12,7 +12,7 @@ const Projects = () => {
       <Title title="Projects" />
 
       <section className="min-h-screen border-b-[1px] border-solid border-grey">
-        <div className="w-4/5 min-h-screen my-0 mx-auto flex flex-col justify-start">
+        <div className="w-4/5 min-h-screen my-0 mx-auto flex flex-col justify-start lg:w-11/12 2xl:w-7/12">
           <div className="flex flex-col pt-10 pb-20 min-h-min lg:border-l-[1px] lg:border-solid lg:border-grey lg:px-20">
             <ul className="mb-10 flex list-none p-0 gap-3">
               <li className="text-sm text-textgrey before:content-none before:mr-0 lg:text-base">
@@ -32,10 +32,10 @@ const Projects = () => {
             <ol className="ol mt-10">
               {projectLists().map((item, index) => (
                 <li
-                  className={`li pl-10 pb-10 text-text relative border-l-2 border-dashed text-sm before:w-8 lg:text-base lg:before:w-[2.125rem] ${
+                  className={`li pl-10 text-text relative border-l-2 border-dashed text-sm before:w-8 lg:text-base lg:before:w-[2.125rem] ${
                     index === projectLists().length - 1
                       ? "border-background"
-                      : "border-grey "
+                      : "border-grey pb-10"
                   }`}
                   key={index}
                 >
