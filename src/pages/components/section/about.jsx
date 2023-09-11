@@ -4,7 +4,7 @@ const About = () => {
       id="about"
       className="w-full border-b-[1px] border-solid border-grey"
     >
-      <div className="w-4/5 my-0 mx-auto flex flex-col justify-center 2xl:w-7/12">
+      <div className="w-4/5 my-0 mx-auto flex flex-col justify-center min-[2200px]:w-7/12">
         <div className="flex flex-col-reverse lg:flex-row">
           <div className="pt-0 pr-0 pb-20 pl-0 h-full flex flex-col items-center lg:py-20 lg:pr-20">
             <p className="mt-0 mb-10 text-text text-sm lg:text-center lg:text-base">

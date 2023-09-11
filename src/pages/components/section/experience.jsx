@@ -6,7 +6,7 @@ const Experience = () => {
       id="experience"
       className="w-full border-b-[1px] border-solid border-grey"
     >
-      <div className="w-4/5 my-0 mx-auto flex flex-col justify-center 2xl:w-7/12">
+      <div className="w-4/5 my-0 mx-auto flex flex-col justify-center min-[2200px]:w-7/12">
         <div className="flex flex-col lg:flex-row">
           <div className="pt-20 pr-0 pl-0 pb-10 lg:py-20 lg:pr-20 lg:border-r-[1px] lg:border-solid lg:border-text">
             <h2 className="m-0 text-lg font-bold text-text uppercase tracking-[5px] lg:rotate-left lg:text-xl">

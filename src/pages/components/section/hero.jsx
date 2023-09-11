@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <section className="h-96 mb-24 lg:min-h-screen">
-      <div className="w-4/5 h-full my-0 py-10 mx-auto flex flex-col justify-between lg:w-11/12 2xl:w-7/12">
+      <div className="w-4/5 h-full my-0 py-10 mx-auto flex flex-col justify-between lg:w-11/12 min-[2200px]:w-7/12">
         <div className="flex flex-col justify-between items-center lg:flex-row">
           <h4 className="mb-4 text-medium font-bold text-text transition-all duration-300 ease-in-out hover:tracking-[5px] lg:mb-0">
             yandaagil.

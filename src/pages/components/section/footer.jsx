@@ -19,7 +19,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <div className="w-4/5 my-0 mx-auto flex flex-col justify-center 2xl:w-7/12">
+      <div className="w-4/5 my-0 mx-auto flex flex-col justify-center min-[2200px]:w-7/12">
         <div className="py-5 px-0 flex flex-row justify-between">
           <div className="flex flex-row items-center">
             <Tippy

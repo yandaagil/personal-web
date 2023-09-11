@@ -9,7 +9,7 @@ const Project = () => {
       id="work"
       className="w-full border-t-[1px] border-b-[1px] border-solid border-grey"
     >
-      <div className="w-4/5 my-0 mx-auto flex flex-col justify-center 2xl:w-7/12">
+      <div className="w-4/5 my-0 mx-auto flex flex-col justify-center min-[2200px]:w-7/12">
         <div className="flex flex-col pt-20 px-0 pb-0">
           <div className="flex flex-row flex-wrap justify-center w-full ml-0.5 mt-0.5">
             {projectLists().map((item, index) => (
