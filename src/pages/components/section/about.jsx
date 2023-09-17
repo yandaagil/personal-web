@@ -24,7 +24,7 @@ const About = () => {
             <a
               className="py-2 px-5 text-sm font-semibold border-[1px] border-solid hover:bg-text hover:border-[1px] hover:border-solid hover:border-text hover:text-background lg:text-base"
               target="__blank"
-              href="https://drive.google.com/file/d/1Bz6MvKTfjKU3jvr8r_S9zzWrhQ5GsGJD/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ve6KI4FWd8BIrUowprIIiVQg0AaRy1LS/view?usp=sharing"
             >
               Curriculum Vitae
             </a>
