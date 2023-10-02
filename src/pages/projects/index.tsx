@@ -3,7 +3,6 @@ import Title from "@/components/section/title";
 import Footer from "@/components/section/footer";
 import { projectLists } from "@/components/projectLists";
 import { GithubLogo, ArrowSquareOut } from "@phosphor-icons/react";
-import Tippy from "@/components/tooltip";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import Cursor from "@/components/cursor";
 
