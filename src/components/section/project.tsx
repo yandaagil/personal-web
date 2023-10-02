@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { GithubLogo, ArrowSquareOut } from "@phosphor-icons/react";
-import { projectLists } from "../../../projectLists";
-import Tippy from "../tooltip";
+import { projectLists } from "@/components/projectLists";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 
 const Project = () => {
   return (
     <section
       id="work"
-      className="w-full border-t-[1px] border-b-[1px] border-solid border-grey"
+      className="w-full border-t-[1px] border-b-[1px] border-solid border-muted"
     >
       <div className="w-4/5 my-0 mx-auto flex flex-col justify-center min-[2200px]:w-7/12">
         <div className="flex flex-col pt-20 px-0 pb-0">
@@ -35,28 +35,36 @@ const Project = () => {
                   >
                     <span>Read more</span>
                   </Link>
-                  <Tippy
-                    text="Check the source code"
-                    element={
-                      <Link href={item.repo} target="__blank">
-                        <GithubLogo size={20} className="text-textgrey" />
-                      </Link>
-                    }
-                  />
-                  {item.web !== "" ? (
-                    <Tippy
-                      text="Visit live preview"
-                      element={
-                        <Link
-                          href={item.web}
-                          className="ml-2.5"
-                          target="__blank"
-                        >
-                          <ArrowSquareOut size={20} className="text-textgrey" />
+                  <TooltipProvider>
+                    <Tooltip delayDuration={0}>
+                      <TooltipTrigger asChild>
+                        <Link href={item.repo} target="__blank">
+                          <GithubLogo size={20} className="text-textgrey" />
                         </Link>
-                      }
-                    />
-                  ) : null}
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Check the source code</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                  {item.web &&
+                    <TooltipProvider>
+                      <Tooltip delayDuration={0}>
+                        <TooltipTrigger asChild>
+                          <Link
+                            href={item.web}
+                            className="ml-2.5"
+                            target="__blank"
+                          >
+                            <ArrowSquareOut size={20} className="text-textgrey" />
+                          </Link>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Visit live preview</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  }
                 </div>
               </div>
             ))}

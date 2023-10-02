@@ -1,5 +1,6 @@
 import Link from "next/link";
-import Title from "./components/section/title";
+import Title from "@/components/section/title";
+import Cursor from "@/components/cursor";
 
 const NotFound = () => {
   return (
@@ -16,6 +17,8 @@ const NotFound = () => {
           </Link>
         </div>
       </section>
+
+      <Cursor />
     </>
   );
 };

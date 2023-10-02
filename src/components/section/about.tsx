@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-full border-b-[1px] border-solid border-grey"
+      className="w-full border-b-[1px] border-solid border-muted"
     >
       <div className="w-4/5 my-0 mx-auto flex flex-col justify-center min-[2200px]:w-7/12">
         <div className="flex flex-col-reverse lg:flex-row">
@@ -22,7 +22,7 @@ const About = () => {
               front-end development.
             </p>
             <a
-              className="py-2 px-5 text-sm font-semibold border-[1px] border-solid hover:bg-text hover:border-[1px] hover:border-solid hover:border-text hover:text-background lg:text-base"
+              className="py-2 px-5 text-sm font-semibold border-[1px] border-solid hover:bg-foreground hover:border-[1px] hover:border-solid hover:border-foreground hover:text-background lg:text-base"
               target="__blank"
               href="https://drive.google.com/file/d/1Bz6MvKTfjKU3jvr8r_S9zzWrhQ5GsGJD/view?usp=sharing"
             >

@@ -1,9 +1,9 @@
 import Head from "next/head";
 
-const Title = (props) => {
+const Title = ({ title }: { title: string }) => {
   return (
     <Head>
-      <title>{props.title}</title>
+      <title>{title}</title>
       <meta name="description" content="Portfolio" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/favicon.ico" />

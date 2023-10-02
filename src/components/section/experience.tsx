@@ -4,7 +4,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="w-full border-b-[1px] border-solid border-grey"
+      className="w-full border-b-[1px] border-solid border-muted"
     >
       <div className="w-4/5 my-0 mx-auto flex flex-col justify-center min-[2200px]:w-7/12">
         <div className="flex flex-col lg:flex-row">
@@ -29,7 +29,7 @@ const Experience = () => {
                     href="https://diskominfo.karanganyarkab.go.id/"
                     target="__blank"
                   >
-                    <span className="text-textgrey text-sm before:content-['@'] transition-all duration-300 ease-in-out lg:underline lg:decoration-dotted lg:underline-offset-8 hover:text-text lg:text-base">
+                    <span className="text-textgrey text-sm before:content-['@'] transition-all duration-300 ease-in-out lg:underline lg:decoration-dotted lg:underline-offset-8 hover:text-foreground lg:text-base">
                       Dinas Komunikasi dan Informatika Kabupaten Karanganyar
                     </span>
                   </Link>{" "}
@@ -52,7 +52,7 @@ const Experience = () => {
                 </div>
                 <h4 className="mt-0 mr-0 mb-4 text-textgrey text-sm lg:text-base">
                   <Link href="https://www.ruangguru.com/" target="__blank">
-                    <span className="text-textgrey text-sm before:content-['@'] transition-all duration-300 ease-in-out lg:underline lg:decoration-dotted lg:underline-offset-8 hover:text-text lg:text-base">
+                    <span className="text-textgrey text-sm before:content-['@'] transition-all duration-300 ease-in-out lg:underline lg:decoration-dotted lg:underline-offset-8 hover:text-foreground lg:text-base">
                       Ruangguru
                     </span>
                   </Link>{" "}
