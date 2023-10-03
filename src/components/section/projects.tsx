@@ -2,8 +2,9 @@ import Link from "next/link";
 import { GithubLogo, ArrowSquareOut } from "@phosphor-icons/react";
 import { projectLists } from "@/components/projectLists";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+import TechIcons from "../techIcons";
 
-const Project = () => {
+const Projects = () => {
   return (
     <section
       id="work"
@@ -14,23 +15,24 @@ const Project = () => {
           <div className="flex flex-row flex-wrap justify-center w-full ml-0.5 mt-0.5">
             {projectLists().map((item, index) => (
               <div
-                className="flex-auto h-auto flex flex-col justify-between p-5 ml-[-2px] mt-[-2px] border-2 border-solid border-text lg:grow lg:shrink lg:basis-1/3 lg:p-10"
+                className="flex-auto h-auto flex flex-col justify-between p-5 ml-[-2px] mt-[-2px] border-2 border-solid border-muted lg:grow lg:shrink lg:basis-1/3 lg:p-10"
                 key={index}
               >
                 <h3 className="mt-0 mr-auto">
                   <Link
-                    href={item.link}
+                    href={`/projects/${item.slug}`}
                     className="pb-1 text-sm font-bold head-link lg:text-base"
                   >
                     <span>{item.title}</span>
                   </Link>
                 </h3>
-                <p className="my-5 text-textgrey text-sm line-clamp-3 lg:text-base">
+                <p className="mt-5 mb-2 text-textgrey text-sm line-clamp-3 lg:text-base">
                   {item.desc}
                 </p>
-                <div className="flex justify-between items-center">
+                <TechIcons techs={item.stack} className="w-5 h-5 text-textgrey transition-all duration-100 ease-in-out hover:text-foreground" />
+                <div className="mt-5 flex justify-between items-center">
                   <Link
-                    href={item.link}
+                    href={`/projects/${item.slug}`}
                     className="flex mr-auto items-center subhead-link text-sm lg:text-base"
                   >
                     <span>Read more</span>
@@ -39,7 +41,7 @@ const Project = () => {
                     <Tooltip delayDuration={0}>
                       <TooltipTrigger asChild>
                         <Link href={item.repo} target="__blank">
-                          <GithubLogo size={20} className="text-textgrey" />
+                          <GithubLogo size={20} className="text-textgrey transition-all duration-100 ease-in-out hover:text-grey" />
                         </Link>
                       </TooltipTrigger>
                       <TooltipContent>
@@ -56,7 +58,7 @@ const Project = () => {
                             className="ml-2.5"
                             target="__blank"
                           >
-                            <ArrowSquareOut size={20} className="text-textgrey" />
+                            <ArrowSquareOut size={20} className="text-textgrey transition-all duration-100 ease-in-out hover:text-grey" />
                           </Link>
                         </TooltipTrigger>
                         <TooltipContent>
@@ -71,7 +73,7 @@ const Project = () => {
           </div>
         </div>
         <div className="ml-0.5 pb-20">
-          <div className="flex p-5 mx-[-2px] mt-[-2px] mb-0 border-2 border-solid border-text lg:p-10">
+          <div className="flex p-5 mx-[-2px] mt-[-2px] mb-0 border-2 border-solid border-muted lg:p-10">
             <Link
               href="/projects"
               className="flex mr-auto items-center subhead-link text-sm lg:text-base"
@@ -85,4 +87,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default Projects;

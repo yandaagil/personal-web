@@ -1,10 +1,9 @@
 import Link from "next/link";
-import Title from "@/components/section/title";
-import Footer from "@/components/section/footer";
+import Title from "@/components/title";
 import { projectLists } from "@/components/projectLists";
 import { GithubLogo, ArrowSquareOut } from "@phosphor-icons/react";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
-import Cursor from "@/components/cursor";
+import TechIcons from "@/components/techIcons";
 
 const Projects = () => {
   return (
@@ -17,32 +16,32 @@ const Projects = () => {
             <ul className="mb-10 flex list-none p-0 gap-3">
               <li className="text-sm text-textgrey before:content-none before:mr-0 lg:text-base">
                 <Link href="/">
-                  <span className="text-textgrey">Home</span>
+                  <span className="text-textgrey transition-all duration-100 ease-in-out hover:text-grey">Home</span>
                 </Link>
               </li>
               <li className="text-sm text-textgrey before:content-['/'] before:mr-2.5 lg:text-base">
                 <Link href="/projects">
-                  <span className="text-textgrey">Projects</span>
+                  <span className="text-textgrey transition-all duration-100 ease-in-out hover:text-grey">Projects</span>
                 </Link>
               </li>
             </ul>
-            <h3 className="mx-0 mt-0 mb-2.5 text-text font-bold text-4xl lg:text-6xl">
+            <h3 className="mx-0 mt-0 mb-2.5 text-foreground font-bold text-4xl lg:text-6xl">
               Projects
             </h3>
             <ol className="ol mt-10">
               {projectLists().map((item, index) => (
                 <li
-                  className={`li pl-10 text-text relative border-l-2 border-dashed text-sm before:w-8 lg:text-base lg:before:w-[2.125rem] 
+                  key={index}
+                  className={`li pl-10 text-foreground relative border-l-2 border-dashed text-sm before:w-8 lg:text-base lg:before:w-[2.125rem] 
                   ${index === projectLists().length - 1
                       ? "border-background"
-                      : "border-grey pb-10"
+                      : "border-muted pb-10"
                     }`}
-                  key={index}
                 >
-                  <div className="flex items-center">
+                  <div className="mb-4 flex items-center">
                     <h3 className="m-0">
                       <Link
-                        href={item.link}
+                        href={`/projects/${item.slug}`}
                         className="head-link text-sm lg:text-base"
                       >
                         {item.title}
@@ -56,7 +55,7 @@ const Projects = () => {
                             className="ml-5 flex items-center"
                             target="__blank"
                           >
-                            <GithubLogo size={20} className="text-textgrey" />
+                            <GithubLogo size={20} className="text-textgrey transition-all duration-100 ease-in-out hover:text-grey" />
                           </Link>
                         </TooltipTrigger>
                         <TooltipContent>
@@ -75,7 +74,7 @@ const Projects = () => {
                             >
                               <ArrowSquareOut
                                 size={20}
-                                className="text-textgrey"
+                                className="text-textgrey transition-all duration-100 ease-in-out hover:text-grey"
                               />
                             </Link>
                           </TooltipTrigger>
@@ -86,18 +85,16 @@ const Projects = () => {
                       </TooltipProvider>
                     }
                   </div>
-                  <p className="mt-4 mb-0 text-sm text-textgrey line-clamp-3 lg:text-base">
+                  <p className="mt-4 mb-4 text-sm text-textgrey line-clamp-3 lg:text-base">
                     {item.desc}
                   </p>
+                  <TechIcons techs={item.stack} className="w-5 h-5 text-textgrey transition-all duration-100 ease-in-out hover:text-foreground" />
                 </li>
               ))}
             </ol>
           </div>
         </div>
       </section>
-
-      <Footer />
-      <Cursor />
     </>
   );
 };
