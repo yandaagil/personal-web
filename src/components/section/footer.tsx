@@ -3,6 +3,7 @@ import { EnvelopeSimple, LinkedinLogo, GithubLogo, InstagramLogo } from "@phosph
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 
 type SocialMedia = {
+  title: string;
   icon: JSX.Element;
   link?: string;
   tooltip: JSX.Element;
@@ -10,20 +11,24 @@ type SocialMedia = {
 
 const socialMedia: SocialMedia[] = [
   {
+    title: "Email",
     icon: <EnvelopeSimple size={20} />,
     tooltip: <p>Click to copy <strong>yandaagil@gmail.com</strong></p>
   },
   {
+    title: "LinkedIn",
     icon: <LinkedinLogo size={20} />,
     link: "https://www.linkedin.com/in/yandaagil/",
     tooltip: <p>Connect me on <strong>LinkedIn</strong></p>
   },
   {
+    title: "GitHub",
     icon: <GithubLogo size={20} />,
     link: "https://www.github.com/yandaagil",
     tooltip: <p>See my repo on <strong>GitHub</strong></p>
   },
   {
+    title: "Instagram",
     icon: <InstagramLogo size={20} />,
     link: "https://www.instagram.com/yandaagil",
     tooltip: <p>Follow me on <strong>Instagram</strong></p>
@@ -50,6 +55,7 @@ const Footer = () => {
                       className="flex items-center mr-6 text-foreground cursor-pointer relative"
                       target="__blank"
                       onClick={index === 0 && handleCopy}
+                      aria-label={`${social.title} link`}
                     >
                       {social.icon}
                     </Link>

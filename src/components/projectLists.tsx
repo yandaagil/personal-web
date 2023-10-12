@@ -4,6 +4,7 @@ import todo from "@/images/todo/todoapp.png";
 import bookshelfapp from "@/images/bookshelf/bookshelfapp.png";
 import tictactoe from "@/images/tictactoe/tictactoe.png";
 import thesocial from "@/images/thesocial/thesocial.png";
+import moovies from "@/images/moovies/moovies.png";
 import { TechListType } from "./techIcons";
 
 export type Project = {
@@ -36,7 +37,16 @@ export const projectLists = (): Project[] => {
           role: "Back End Developer"
         }
       ],
-      stack: ["Next.js", "Prisma", "MySQL", "Tailwind CSS"]
+      stack: ["Next.js", "Prisma", "Tailwind CSS"]
+    },
+    {
+      title: "Moovies",
+      desc: "Movie app for searching your favorite movies. Built with Next.js and Tailwind CSS.",
+      slug: "moovies",
+      repo: "https://github.com/yandaagil/moovies",
+      web: "https://moovies-yanda.vercel.app/",
+      image: moovies,
+      stack: ["Next.js", "Tailwind CSS"]
     },
     {
       title: "Inventory Management",
@@ -79,7 +89,7 @@ export const projectLists = (): Project[] => {
       repo: "https://github.com/yandaagil/tic-tac-toe",
       web: "https://tic-tac-toe-yanda.vercel.app/",
       image: tictactoe,
-      stack: ["React.js"]
+      stack: ["React.js", "Vite"]
     },
   ];
   return lists;

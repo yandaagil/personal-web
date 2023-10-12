@@ -58,12 +58,12 @@ const Experiences = () => {
                     }`}
                 >
                   <div className="flex flex-col justify-between lg:flex-row">
-                    <h2 className="m-0 font-bold lg:text-lg">
+                    <h3 className="m-0 font-bold lg:text-lg">
                       {experience.title}
-                    </h2>
-                    <h5 className="mt-0 mr-0 mb-4 text-textgrey text-sm italic lg:mb-0 lg:text-base">
+                    </h3>
+                    <h4 className="mt-0 mr-0 mb-4 text-textgrey text-sm italic lg:mb-0 lg:text-base">
                       {experience.date}
-                    </h5>
+                    </h4>
                   </div>
                   <h4 className="mt-0 mr-0 mb-4 text-textgrey text-sm lg:text-base">
                     <Link

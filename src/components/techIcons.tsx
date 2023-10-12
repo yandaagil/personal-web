@@ -1,4 +1,4 @@
-import { SiNextdotjs, SiPrisma, SiMysql, SiTailwindcss, SiPhp, SiBootstrap, SiReact, SiJavascript, SiHtml5 } from "@icons-pack/react-simple-icons";
+import { SiNextdotjs, SiPrisma, SiMysql, SiTailwindcss, SiPhp, SiBootstrap, SiReact, SiJavascript, SiHtml5, SiVite } from "@icons-pack/react-simple-icons";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import React from "react";
 
@@ -38,6 +38,10 @@ const techList = {
   "HTML": {
     name: "HTML",
     icon: <SiHtml5 />
+  },
+  "Vite": {
+    name: "Vite",
+    icon: <SiVite />
   }
 }
 

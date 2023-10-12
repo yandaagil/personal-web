@@ -54,6 +54,7 @@ const Projects = () => {
                             href={item.repo}
                             className="ml-5 flex items-center"
                             target="__blank"
+                            aria-label={`${item.title} repo`}
                           >
                             <GithubLogo size={20} className="text-textgrey transition-all duration-100 ease-in-out hover:text-grey" />
                           </Link>
@@ -71,6 +72,7 @@ const Projects = () => {
                               href={item.web}
                               className="ml-2.5 flex items-center"
                               target="__blank"
+                              aria-label={`${item.title} live preview`}
                             >
                               <ArrowSquareOut
                                 size={20}
