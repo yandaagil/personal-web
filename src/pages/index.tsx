@@ -1,17 +1,19 @@
 import Title from "@/components/title";
-import Hero from "@/components/section/hero";
 import Projects from "@/components/section/projects";
-import Experiences from "@/components/section/experiences";
 import About from "@/components/section/about";
+import Header from "@/components/section/header";
+import { Toaster } from "@/components/ui/toaster"
 
 export default function Home() {
   return (
     <>
       <Title title="Yanda Agil" />
-      <Hero />
-      <Projects />
-      <Experiences />
-      <About />
+      <Header />
+      <main>
+        <About />
+        <Projects />
+      </main>
+      <Toaster />
     </>
   );
 }

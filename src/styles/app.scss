@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Jura:wght@300;400;500;600;700&family=Karla:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -25,8 +25,10 @@
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
+		--radius: 0.5rem;
 		--textgrey: 0, 0%, 50%;
 		--grey: 0, 0%, 80%;
+		--selection: 0, 0%, 20%;
   }
 }
 
@@ -51,7 +53,7 @@
 }
 
 ::selection {
-	background: hsl(var(--muted));
+	background: hsl(var(--selection));
 	color: hsl(var(--foreground));
 }
 
@@ -80,7 +82,7 @@
 
 html, body {
 	font-family: var(--font-inter);
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 1.5;
 	margin: 0;
 	-webkit-font-smoothing: antialiased;

@@ -5,7 +5,6 @@ import bookshelfapp from "@/images/bookshelf/bookshelfapp.png";
 import tictactoe from "@/images/tictactoe/tictactoe.png";
 import thesocial from "@/images/thesocial/thesocial.png";
 import moovies from "@/images/moovies/moovies.png";
-import { TechListType } from "./techIcons";
 
 export type Project = {
   title: string;
@@ -19,7 +18,7 @@ export type Project = {
     link: string,
     role: string
   }[];
-  stack: TechListType[];
+  stack: string[];
 }
 
 export const projectLists = (): Project[] => {
