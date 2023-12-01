@@ -45,7 +45,7 @@ const ProjectDetail = ({ project }: ProjectDetailProps) => {
             </Link>
           </div>
         </div>
-        <p className="font-extralight text-sm md:text-base">{project.desc}</p>
+        <p className="font-normal text-textgrey text-sm md:text-base">{project.desc}</p>
         {project.image &&
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
             <Image
@@ -64,12 +64,12 @@ const ProjectDetail = ({ project }: ProjectDetailProps) => {
                 <Link href={member.link} key={index} target="__blank" className="group">
                   <li className="flex items-center justify-between">
                     <div className="flex flex-col space-y-1">
-                      <h3 className="transition-all duration-300 ease-in-out text-sm md:text-base group-hover:text-muted-foreground">
+                      <h3 className="font-medium transition-all duration-300 ease-in-out text-sm md:text-base group-hover:opacity-70">
                         {member.name}
                       </h3>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <span className="font-extralight transition-all duration-300 ease-in-out text-muted-foreground text-sm md:text-base group-hover:text-textgrey">
+                      <span className="font-medium transition-all duration-300 ease-in-out text-grey text-sm md:text-base group-hover:opacity-70">
                         {member.role}
                       </span>
                     </div>

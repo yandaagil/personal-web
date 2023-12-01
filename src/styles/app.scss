@@ -7,7 +7,7 @@
   :root {
 		--font-inter: 'Inter', sans-serif;
 		--background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
+    --foreground: 220, 14%, 96%;
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 3.9%;
@@ -26,8 +26,8 @@
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
 		--radius: 0.5rem;
-		--textgrey: 0, 0%, 50%;
-		--grey: 0, 0%, 80%;
+		--textgrey: 216, 12%, 84%;
+		--grey: 223, 3%, 41%;
 		--selection: 0, 0%, 20%;
   }
 }
@@ -54,7 +54,6 @@
 
 ::selection {
 	background: hsl(var(--selection));
-	color: hsl(var(--foreground));
 }
 
 ::-webkit-scrollbar {

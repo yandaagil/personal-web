@@ -11,21 +11,21 @@ type SocialMedia = {
 const socialMedia: SocialMedia[] = [
   {
     name: "Email",
-    icon: <Mail size={18} className="hover:text-muted-foreground transition-all duration-300 ease-in-out" />,
+    icon: <Mail size={18} className="hover:opacity-70 transition-all duration-300 ease-in-out" />,
   },
   {
     name: "Linkedin",
-    icon: <Linkedin size={18} className="hover:text-muted-foreground transition-all duration-300 ease-in-out" />,
+    icon: <Linkedin size={18} className="hover:opacity-70 transition-all duration-300 ease-in-out" />,
     link: "https://www.linkedin.com/in/yandaagil/",
   },
   {
     name: "Github",
-    icon: <Github size={18} className="hover:text-muted-foreground transition-all duration-300 ease-in-out" />,
+    icon: <Github size={18} className="hover:opacity-70 transition-all duration-300 ease-in-out" />,
     link: "https://www.github.com/yandaagil",
   },
   {
     name: "Instagram",
-    icon: <Instagram size={18} className="hover:text-muted-foreground transition-all duration-300 ease-in-out" />,
+    icon: <Instagram size={18} className="hover:opacity-70 transition-all duration-300 ease-in-out" />,
     link: "https://www.instagram.com/yandaagil",
   },
 ]
