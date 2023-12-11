@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -41,17 +42,6 @@
   }
 }
 
-@layer utilities {
-	.rotate-left {
-		writing-mode: vertical-lr;
-		transform: rotate(180deg);
-	}
-	
-	.rotate-right {
-		writing-mode: vertical-lr;
-	}
-}
-
 ::selection {
 	background: hsl(var(--selection));
 }
@@ -65,7 +55,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: hsl(var(--muted));
+	background-color: hsl(var(--grey));
 	border: 6px solid transparent;
 	background-clip: content-box;
 }
@@ -86,105 +76,4 @@ html, body {
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
 	scroll-behavior: smooth;
-}
-
-a[href] {
-	color: hsl(var(--foreground));
-	transition: all .1s ease-in-out;
-	text-decoration: none;
-}
-
-.head-link {
-	padding-bottom: 0.2rem;
-	color: hsl(var(--foreground));
-	position: relative;
-	transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-	transition-duration: 400ms;
-	transition-property: color;
-
-	&:hover, &:focus {
-		color: hsl(var(--foreground));
-	}
-
-	&:focus:after, &:hover:after {
-		width: 100%;
-		left: 0%;
-	}
-
-	&:after {
-		content: "";
-		pointer-events: none;
-		bottom: -2px;
-		left: 50%;
-		position: absolute;
-		width: 0%;
-		height: 1px;
-		background-color: #fff;
-		transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-		transition-duration: 400ms;
-		transition-property: width, left;
-	}
-}
-
-.subhead-link {
-	&:before {
-		background-color: #fff;
-		content: "";
-		display: inline-block;
-		height: 1px;
-		transition: all .42s cubic-bezier(.25,.8,.25,1);
-		width: 0;
-	}
-
-	&:hover:before {
-		margin-right: 10px;
-		background-color: #fff;
-		width: 3rem;
-	}
-}
-
-.list {
-	counter-reset: steps;
-
-	.lists {
-		counter-increment: steps;
-
-		&::before {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			content: counter(steps);
-			margin: 0;
-			position: absolute;
-			left: -1.10rem;
-			padding: 5px;
-			margin-right: 0;
-			border-radius: 50%;
-			background-color: hsl(var(--foreground));
-			color: hsl(var(--background));
-		}
-	}
-}
-
-.ol {
-	counter-reset: steps;
-
-	.li {
-		counter-increment: steps;
-
-		&::before {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			content: counter(steps);
-			margin: 0;
-			position: absolute;
-			left: -1.10rem;
-			padding: 5px;
-			margin-right: 0;
-			border-radius: 50%;
-			background-color: hsl(var(--foreground));
-			color: hsl(var(--background));
-		}
-	}
 }
