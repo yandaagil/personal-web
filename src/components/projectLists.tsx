@@ -5,6 +5,7 @@ import bookshelfapp from "@/images/bookshelf/bookshelfapp.png";
 import tictactoe from "@/images/tictactoe/tictactoe.png";
 import thesocial from "@/images/thesocial/thesocial.png";
 import moovies from "@/images/moovies/moovies.png";
+import infiniteScroll from "@/images/infinite-scroll/infinite-scroll.png";
 
 export type Project = {
   title: string;
@@ -53,6 +54,15 @@ export const projectLists = (): Project[] => {
       slug: "inventory",
       repo: "https://github.com/yandaagil/inventory-management",
       stack: ["PHP", "MySQL", "Bootstrap"]
+    },
+    {
+      title: "Infinite Scroll",
+      desc: "Basic web implementation of infinite scrolling using the Unsplash API. This application allows users to scroll through an infinite number of images from Unsplash, a popular image sharing platform.",
+      slug: "infinite-scroll",
+      repo: "https://github.com/yandaagil/infinite-scroll",
+      web: "https://infinite-scroll-yanda.vercel.app/",
+      image: infiniteScroll,
+      stack: ["HTML", "CSS", "JavaScript", "Unsplash API"]
     },
     {
       title: "Star Wars",
