@@ -6,13 +6,13 @@ const NotFound = () => {
     <>
       <Title title="X__X" />
 
-      <section className="h-96 lg:min-h-screen error">
-        <div className="w-4/5 h-full my-0 py-10 mx-auto flex flex-col items-center justify-center lg:w-11/12 2xl:w-7/12">
-          <h1 className="mb-10 text-3xl font-semibold text-foreground lg:text-6xl">
-            😔 | Page Not Found
+      <section className="min-h-screen container px-4 flex items-center justify-center md:max-w-2xl">
+        <div className="h-full text-center">
+          <h1 className="mb-10 text-3xl font-semibold">
+            what do you want from me?
           </h1>
-          <Link href="/" className="font-bold head-link">
-            <span>Back to Home</span>
+          <Link href="/" className="font-medium transition-all duration-300 ease-in-out underline decoration-solid underline-offset-4 decoration-[#5e6365] text-sm md:text-base hover:opacity-70">
+            Take Me Back to Eden
           </Link>
         </div>
       </section>
