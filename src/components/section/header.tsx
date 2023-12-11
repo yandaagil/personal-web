@@ -1,6 +1,7 @@
 import { Mail, Linkedin, Github, Instagram } from "lucide-react";
 import Link from "next/link";
 import { toast } from 'sonner';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 
 type SocialMedia = {
   name: string;
@@ -48,15 +49,32 @@ const Header = () => {
         </div>
         <div className="flex items-center space-x-5">
           {socialMedia.map((social, index) => (
-            <Link
-              href={social.link ?? ""}
-              target={index !== 0 ? "_blank" : ""}
-              key={index}
-              onClick={index === 0 && handleCopy}
-              aria-label={social.name}
-            >
-              {social.icon}
-            </Link>
+            social.name === "Email" ? (
+              <TooltipProvider key={index}>
+                <Tooltip delayDuration={0}>
+                  <TooltipTrigger asChild>
+                    <button
+                      onClick={handleCopy}
+                      aria-label={social.name}
+                    >
+                      {social.icon}
+                    </button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Click to copy <strong>(yandaagil@gmail.com)</strong></p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            ) : (
+              <Link
+                href={social.link}
+                target="_blank"
+                key={index}
+                aria-label={social.name}
+              >
+                {social.icon}
+              </Link>
+            )
           ))}
         </div>
       </div>
