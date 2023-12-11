@@ -2,7 +2,7 @@ import Title from "@/components/title";
 import Projects from "@/components/section/projects";
 import About from "@/components/section/about";
 import Header from "@/components/section/header";
-import { Toaster } from 'sonner';
+import { Toaster } from "@/components/ui/toaster"
 
 export default function Home() {
   return (
@@ -13,10 +13,7 @@ export default function Home() {
         <About />
         <Projects />
       </main>
-      <Toaster
-        position="top-right"
-        invert={true}
-      />
+      <Toaster />
     </>
   );
 }

@@ -1,6 +1,6 @@
 import { Mail, Linkedin, Github, Instagram } from "lucide-react";
 import Link from "next/link";
-import { toast } from 'sonner';
+import { useToast } from "@/components/ui/use-toast"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 
 type SocialMedia = {
@@ -32,11 +32,14 @@ const socialMedia: SocialMedia[] = [
 ]
 
 const Header = () => {
+  const { toast } = useToast()
+
   const handleCopy = () => {
     const emailAddress: string = "yandaagil@gmail.com";
     navigator.clipboard.writeText(emailAddress);
-    toast.success('Email copied to clipboard!', {
-      description: 'yandaagil@gmail.com',
+    toast({
+      title: "Email copied to clipboard!",
+      description: "yandaagil@gmail.com",
     })
   };
 
