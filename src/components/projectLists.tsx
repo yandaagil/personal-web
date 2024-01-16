@@ -1,11 +1,15 @@
 import { StaticImageData } from "next/image";
 import starwars from "@/images/starwars/starwars.png";
+import starwars2 from "@/images/starwars/starwars2.png";
+import starwars3 from "@/images/starwars/starwars3.png";
 import todo from "@/images/todo/todoapp.png";
+import todo2 from "@/images/todo/todoapp2.png";
 import bookshelfapp from "@/images/bookshelf/bookshelfapp.png";
 import tictactoe from "@/images/tictactoe/tictactoe.png";
 import thesocial from "@/images/thesocial/thesocial.png";
 import moovies from "@/images/moovies/moovies.png";
-import infiniteScroll from "@/images/infinite-scroll/infinite-scroll.png";
+import moovies2 from "@/images/moovies/moovies2.png";
+import moovies3 from "@/images/moovies/moovies3.png";
 
 export type Project = {
   title: string;
@@ -13,7 +17,8 @@ export type Project = {
   slug: string;
   repo: string;
   web?: string;
-  image?: StaticImageData
+  image?: StaticImageData[]
+  video?: string;
   team?: {
     name: string,
     link: string,
@@ -26,10 +31,10 @@ export const projectLists = (): Project[] => {
   const lists: Project[] = [
     {
       title: "The Social",
-      desc: "Collaborative work creating simple social media where the user can create a post, find posts by categories, and search posts. Built with Next.js and Prisma. Development is still in progress.",
+      desc: "Collaborative work creating simple social media where the user can create a post, find posts by categories, and search posts. Built with Next.js, Prisma, MySQL database. Development is still in progress.",
       slug: "thesocial",
       repo: "https://github.com/yandaagil/thesocial",
-      image: thesocial,
+      image: [thesocial],
       team: [
         {
           name: "Ghozy Ikbar",
@@ -37,16 +42,16 @@ export const projectLists = (): Project[] => {
           role: "Back End Developer"
         }
       ],
-      stack: ["Next.js", "Prisma", "Tailwind CSS"]
+      stack: ["Next.js", "Prisma", "Tailwind CSS", "MySQL"]
     },
     {
       title: "Moovies",
-      desc: "Movie app for searching your favorite movies. Built with Next.js and Tailwind CSS.",
+      desc: "Movie app for searching your favorite movies. Built with Next.js and The Movie Database API.",
       slug: "moovies",
       repo: "https://github.com/yandaagil/moovies",
       web: "https://moovies-yanda.vercel.app/",
-      image: moovies,
-      stack: ["Next.js", "Tailwind CSS"]
+      image: [moovies, moovies2, moovies3],
+      stack: ["Next.js", "Tailwind CSS", "TMDB API"]
     },
     {
       title: "Inventory Management",
@@ -61,17 +66,17 @@ export const projectLists = (): Project[] => {
       slug: "infinite-scroll",
       repo: "https://github.com/yandaagil/infinite-scroll",
       web: "https://infinite-scroll-yanda.vercel.app/",
-      image: infiniteScroll,
+      video: "https://www.youtube.com/embed/EDyTAJ9e5kU",
       stack: ["HTML", "CSS", "JavaScript", "Unsplash API"]
     },
     {
       title: "Star Wars",
-      desc: "A React.js website that uses APIs to display information about Star Wars characters, planets, and films. Explore the Star Wars universe with ease and learn about your favorite characters, fascinating planets, and iconic films on a single platform.",
+      desc: "A React.js website that uses Star Wars API to display information about Star Wars characters, planets, and films. Explore the Star Wars universe with ease and learn about your favorite characters, fascinating planets, and iconic films on a single platform.",
       slug: "starwars",
       repo: "https://github.com/yandaagil/star-wars",
       web: "https://star-wars-yanda.vercel.app/",
-      image: starwars,
-      stack: ["React.js"]
+      image: [starwars, starwars2, starwars3],
+      stack: ["React.js", "SWAPI"]
     },
     {
       title: "Todo App",
@@ -79,7 +84,7 @@ export const projectLists = (): Project[] => {
       slug: "todo",
       repo: "https://github.com/yandaagil/todoapps",
       web: "https://todoapps-yanda.vercel.app/",
-      image: todo,
+      image: [todo, todo2],
       stack: ["HTML", "JavaScript", "Bootstrap"]
     },
     {
@@ -88,7 +93,7 @@ export const projectLists = (): Project[] => {
       slug: "bookshelf",
       repo: "https://github.com/yandaagil/bookshelf-app",
       web: "https://bookshelf-app-yanda.vercel.app/",
-      image: bookshelfapp,
+      image: [bookshelfapp],
       stack: ["HTML", "JavaScript", "Bootstrap"]
     },
     {
@@ -97,7 +102,7 @@ export const projectLists = (): Project[] => {
       slug: "tictactoe",
       repo: "https://github.com/yandaagil/tic-tac-toe",
       web: "https://tic-tac-toe-yanda.vercel.app/",
-      image: tictactoe,
+      image: [tictactoe],
       stack: ["React.js", "Vite"]
     },
   ];

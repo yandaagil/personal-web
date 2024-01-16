@@ -5,7 +5,6 @@ import { projectLists, Project } from "@/components/projectLists";
 import LightGallery from "lightgallery/react";
 import "lightgallery/scss/lightgallery.scss";
 import "lightgallery/scss/lg-zoom.scss";
-import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { Globe, Github } from "lucide-react";
@@ -47,14 +46,20 @@ const ProjectDetail = ({ project }: ProjectDetailProps) => {
         </div>
         <p className="font-normal text-textgrey text-sm md:text-base">{project.desc}</p>
         {project.image &&
-          <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <Image
-              className="h-auto w-auto"
-              src={project.image}
-              alt={project.title}
-              priority
-            />
+          <LightGallery plugins={[lgZoom]} mode="lg-fade">
+            {project.image.map((img, index) => (
+              <Image
+                key={index}
+                className={`h-auto w-auto cursor-pointer ${index > 0 && 'mt-5'}`}
+                src={img}
+                alt={project.title}
+                priority
+              />
+            ))}
           </LightGallery>
+        }
+        {project.video &&
+          <iframe src={project.video} title="Infinite Scroll.mp4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="w-full h-[200px] md:h-[400px]"></iframe>
         }
         {project.team &&
           <div className="space-y-3">
