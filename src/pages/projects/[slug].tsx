@@ -28,7 +28,7 @@ const ProjectDetail = ({ project }: ProjectDetailProps) => {
             <ul className="flex items-center space-x-2">
               {project.stack.map((tech, index) => (
                 <li key={index}>
-                  <span className="font-extralight rounded-md bg-muted px-2 py-1 text-xs ring-1 ring-inset ring-gray-500/10">{tech}</span>
+                  <span className="font-extralight rounded-md bg-muted px-2 py-1 text-xs">{tech}</span>
                 </li>
               ))}
             </ul>

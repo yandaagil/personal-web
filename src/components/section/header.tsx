@@ -50,7 +50,7 @@ const Header = () => {
           <span className="text-lg font-bold">Yanda Agil</span>
           <span>Front End Developer</span>
         </div>
-        <div className="flex items-center space-x-5">
+        <div className="flex items-center gap-5">
           {socialMedia.map((social, index) => (
             social.name === "Email" ? (
               <TooltipProvider key={index}>
