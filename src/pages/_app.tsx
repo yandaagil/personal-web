@@ -1,4 +1,4 @@
-import "@/styles/app.scss";
+import "@/styles/app.css";
 import type { AppProps } from "next/app";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
