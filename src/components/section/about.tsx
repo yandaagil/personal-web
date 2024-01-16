@@ -19,7 +19,7 @@ const About = () => {
       <div>
         <Link
           target="__blank"
-          href="https://drive.google.com/file/d/1ve6KI4FWd8BIrUowprIIiVQg0AaRy1LS/view?usp=sharing"
+          href="https://drive.google.com/file/d/1_o9zowb_2UFERO4kyP2WrE9M3_s_JNRK/view?usp=sharing"
         >
           <span className="font-medium transition-all duration-300 ease-in-out underline decoration-solid underline-offset-4 decoration-[#5e6365] text-sm md:text-base hover:opacity-70">
             Resume
