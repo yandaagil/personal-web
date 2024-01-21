@@ -17,18 +17,18 @@ export type Project = {
   slug: string;
   repo: string;
   web?: string;
-  image?: StaticImageData[]
+  image?: StaticImageData[];
   video?: string;
   team?: {
-    name: string,
-    link: string,
-    role: string
+    name: string;
+    link: string;
+    role: string;
   }[];
   stack: string[];
-}
+};
 
-export const projectLists = (): Project[] => {
-  const lists: Project[] = [
+export const projectsList = (): Project[] => {
+  const list: Project[] = [
     {
       title: "The Social",
       desc: "Collaborative work creating simple social media where the user can create a post, find posts by categories, and search posts. Built with Next.js, Prisma, MySQL database. Development is still in progress.",
@@ -39,10 +39,10 @@ export const projectLists = (): Project[] => {
         {
           name: "Ghozy Ikbar",
           link: "https://github.com/GhozyIkbarF",
-          role: "Back End Developer"
-        }
+          role: "Back End Developer",
+        },
       ],
-      stack: ["Next.js", "Prisma", "Tailwind CSS", "MySQL"]
+      stack: ["Next.js", "Prisma", "Tailwind CSS", "MySQL"],
     },
     {
       title: "Moovies",
@@ -51,14 +51,14 @@ export const projectLists = (): Project[] => {
       repo: "https://github.com/yandaagil/moovies",
       web: "https://moovies-yanda.vercel.app/",
       image: [moovies, moovies2, moovies3],
-      stack: ["Next.js", "Tailwind CSS", "TMDB API"]
+      stack: ["Next.js", "Tailwind CSS", "TMDB API"],
     },
     {
       title: "Inventory Management",
       desc: "A PHP native and MySQL-based inventory management application with features for adding incoming items, recording outgoing items, efficiently managing stock levels, and maintaining a comprehensive history of item movements for each product.",
       slug: "inventory",
       repo: "https://github.com/yandaagil/inventory-management",
-      stack: ["PHP", "MySQL", "Bootstrap"]
+      stack: ["PHP", "MySQL", "Bootstrap"],
     },
     {
       title: "Infinite Scroll",
@@ -67,7 +67,14 @@ export const projectLists = (): Project[] => {
       repo: "https://github.com/yandaagil/infinite-scroll",
       web: "https://infinite-scroll-yanda.vercel.app/",
       video: "https://www.youtube.com/embed/EDyTAJ9e5kU",
-      stack: ["HTML", "CSS", "JavaScript", "Unsplash API"]
+      team: [
+        {
+          name: "Ghozy Ikbar",
+          link: "https://github.com/GhozyIkbarF",
+          role: "Back End Developer",
+        },
+      ],
+      stack: ["HTML", "CSS", "JavaScript", "Unsplash API"],
     },
     {
       title: "Star Wars",
@@ -76,7 +83,7 @@ export const projectLists = (): Project[] => {
       repo: "https://github.com/yandaagil/star-wars",
       web: "https://star-wars-yanda.vercel.app/",
       image: [starwars, starwars2, starwars3],
-      stack: ["React.js", "SWAPI"]
+      stack: ["React.js", "SWAPI"],
     },
     {
       title: "Todo App",
@@ -85,7 +92,7 @@ export const projectLists = (): Project[] => {
       repo: "https://github.com/yandaagil/todoapps",
       web: "https://todoapps-yanda.vercel.app/",
       image: [todo, todo2],
-      stack: ["HTML", "JavaScript", "Bootstrap"]
+      stack: ["HTML", "JavaScript", "Bootstrap"],
     },
     {
       title: "Bookshelf App",
@@ -94,7 +101,7 @@ export const projectLists = (): Project[] => {
       repo: "https://github.com/yandaagil/bookshelf-app",
       web: "https://bookshelf-app-yanda.vercel.app/",
       image: [bookshelfapp],
-      stack: ["HTML", "JavaScript", "Bootstrap"]
+      stack: ["HTML", "JavaScript", "Bootstrap"],
     },
     {
       title: "Tic~Tac~Toe",
@@ -103,8 +110,8 @@ export const projectLists = (): Project[] => {
       repo: "https://github.com/yandaagil/tic-tac-toe",
       web: "https://tic-tac-toe-yanda.vercel.app/",
       image: [tictactoe],
-      stack: ["React.js", "Vite"]
+      stack: ["React.js", "Vite"],
     },
   ];
-  return lists;
+  return list;
 };

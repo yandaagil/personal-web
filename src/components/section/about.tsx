@@ -1,12 +1,9 @@
 import Link from "next/link";
+import SectionLayout from "../layout";
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="container mt-16 px-4 space-y-5 md:max-w-2xl"
-    >
-      <h1 className="text-2xl font-bold">About</h1>
+    <SectionLayout id="about" title="About">
       <p className="font-normal text-textgrey text-sm md:text-base">
         I am a fresh graduate majoring in Informatics Engineering with a focus on Front-end development. Skilled in HTML, CSS, JavaScript, TypeScript and various front-end frameworks such as React JS and Laravel. Proficient in creating visually appealing and user-friendly websites, and have a strong understanding of web design principles, responsive design, and web development best practices.
       </p>
@@ -26,7 +23,7 @@ const About = () => {
           </span>
         </Link>
       </div>
-    </section>
+    </SectionLayout>
   );
 };
 
