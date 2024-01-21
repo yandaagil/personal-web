@@ -1,6 +1,7 @@
 import React from 'react'
 import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiPhp, SiReact, SiNextdotjs, SiLaravel, SiNodedotjs, SiMysql, SiBootstrap, SiTailwindcss, SiExpress, SiGit, SiGithub } from "@icons-pack/react-simple-icons";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+import SectionLayout from '../layout';
 
 const iconList = [
   {
@@ -67,11 +68,7 @@ const iconList = [
 
 const Skills = () => {
   return (
-    <section
-      id="skills"
-      className="container mt-16 mb-10 px-4 space-y-5 md:mb-16 md:max-w-2xl"
-    >
-      <h1 className="text-2xl font-bold">Skills</h1>
+    <SectionLayout id='skills' title='Skills' className='mb-10 md:mb-16'>
       <ul className="flex flex-wrap gap-8">
         {iconList.map((icon, index) => (
           <li key={index} className="inline-block">
@@ -88,7 +85,7 @@ const Skills = () => {
           </li>
         ))}
       </ul>
-    </section>
+    </SectionLayout>
   )
 }
 
