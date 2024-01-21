@@ -1,5 +1,3 @@
-import React from 'react'
-
 type SectionLayoutProps = {
   id: string
   title: string
