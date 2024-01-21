@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Github, Globe } from "lucide-react";
-import { projectLists } from "@/components/projectLists";
+import { projectsList } from "@/projectsList";
 import { Separator } from "../ui/separator";
 import React from "react";
 import SectionLayout from "../layout";
@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <SectionLayout id="projects" title="Projects" className="mb-10 md:mb-16">
       <ul className="space-y-3">
-        {projectLists().map((project, index) => (
+        {projectsList().map((project, index) => (
           <li className="flex flex-col space-y-3" key={index}>
             <div className="flex items-center justify-between">
               <Link href={`/projects/${project.slug}`} className="w-full">
@@ -28,7 +28,7 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
-            {index !== projectLists().length - 1 && <Separator />}
+            {index !== projectsList().length - 1 && <Separator />}
           </li>
         ))}
       </ul>
