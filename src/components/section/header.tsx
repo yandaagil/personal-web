@@ -51,9 +51,9 @@ const Header = () => {
           <span>Front End Developer</span>
         </div>
         <div className="flex items-center gap-5">
-          {socialMedia.map((social) => (
+          {socialMedia.map((social, index) => (
             social.name === "Email" ? (
-              <TooltipProvider key={social.name}>
+              <TooltipProvider key={index}>
                 <Tooltip delayDuration={0}>
                   <TooltipTrigger asChild>
                     <button
@@ -72,7 +72,7 @@ const Header = () => {
               <Link
                 href={social.link}
                 target="_blank"
-                key={social.name}
+                key={index}
                 aria-label={social.name}
               >
                 {social.icon}

@@ -70,9 +70,9 @@ const Skills = () => {
   return (
     <SectionLayout id='skills' title='Skills' className='mb-10 md:mb-16'>
       <ul className="flex flex-wrap gap-8">
-        {iconList.map((icon) => (
-          <li key={icon.name} className="inline-block">
-            <TooltipProvider>
+        {iconList.map((icon, index) => (
+          <li key={index} className="inline-block">
+            <TooltipProvider key={index}>
               <Tooltip delayDuration={0}>
                 <TooltipTrigger asChild>
                   {icon.icon}
