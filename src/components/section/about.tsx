@@ -18,7 +18,7 @@ const About = () => {
           target="__blank"
           href="https://drive.google.com/file/d/1VZpekOiOPE4_HR2tsblXFaVGuKifDybP/view?usp=sharing"
         >
-          <span className="font-medium transition-all duration-300 ease-in-out underline decoration-solid underline-offset-4 decoration-2 decoration-primary text-sm md:text-base hover:text-primary">
+          <span className="font-medium transition-all duration-300 ease-in-out underline decoration-solid underline-offset-4 decoration-primary text-sm md:text-base hover:decoration-2">
             Resume
           </span>
         </Link>
