@@ -3,7 +3,6 @@ import type { AppProps } from "next/app";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Inter } from 'next/font/google'
-import { ThemeProvider } from "@/components/theme";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,11 +14,9 @@ export default function App({ Component, pageProps }: AppProps) {
           font-family: ${inter.style.fontFamily};
         }
       `}</style>
-      <ThemeProvider>
-        <Component {...pageProps} />
-        <Analytics />
-        <SpeedInsights />
-      </ThemeProvider>
+      <Component {...pageProps} />
+      <Analytics />
+      <SpeedInsights />
     </>
   )
 }

@@ -1,14 +1,18 @@
+import Title from "@/components/title";
+import Header from "@/components/section/header";
+import { Toaster } from "@/components/ui/toaster"
 import Projects from "@/components/section/projects";
-import About from "@/components/section/about";
-import Skills from "@/components/section/skills";
 
 const HomeView = () => {
   return (
-    <main className="space-y-10 md:space-y-16">
-      <About />
-      <Skills />
-      <Projects />
-    </main>
+    <>
+      <Title title="Yanda Agil" />
+      <Header />
+      <main className="space-y-10 md:space-y-16">
+        <Projects />
+      </main>
+      <Toaster />
+    </>
   )
 }
 

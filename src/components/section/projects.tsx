@@ -1,57 +1,43 @@
 import Link from "next/link";
-import { Github, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { ProjectsList } from "@/projectsList";
-import { Separator } from "../ui/separator";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import React from "react";
-import SectionLayout from "../layout";
 
 const Projects = () => {
   return (
-    <SectionLayout id="projects" title="Projects">
-      <ul className="space-y-3">
-        {ProjectsList.map(({ title, slug, web, repo }, index) => (
-          <li className="flex flex-col space-y-3" key={slug}>
+    <section id="projects" className="container px-4 space-y-5 md:max-w-2xl">
+      <h2 className="text-lg font-bold">projects</h2>
+      <ul className="space-y-4">
+        {ProjectsList.map(({ title, repo, web }) => (
+          <li className="flex flex-col space-y-3" key={title}>
             <div className="flex items-center justify-between">
-              <Link href={`/projects/${slug}`} className="w-full">
-                <h2 className="font-medium transition-all duration-300 ease-in-out text-sm md:text-base hover:opacity-70">
+              <Link href={repo} className="w-full" target="_blank">
+                <h2 className="font-normal text-sm underline underline-offset-2 md:text-base hover:text-blue-700">
                   {title}
                 </h2>
               </Link>
               <div className="flex items-center space-x-3">
                 {web &&
-                  <Link href={web} target="__blank" aria-label={`${slug} web`}>
+                  <Link href={web} target="__blank" aria-label={`${title} web`}>
                     <TooltipProvider>
                       <Tooltip delayDuration={0}>
                         <TooltipTrigger asChild>
-                          <ExternalLink size={18} className="text-foreground/60 transition-all duration-300 ease-in-out hover:text-primary" />
+                          <ExternalLink size={18} className="text-foreground/60 hover:text-blue-700" />
                         </TooltipTrigger>
                         <TooltipContent>
-                          Live Preview
+                          live preview
                         </TooltipContent>
                       </Tooltip>
                     </TooltipProvider>
                   </Link>
                 }
-                <Link href={repo} target="__blank" aria-label={`${slug} repo`}>
-                  <TooltipProvider>
-                    <Tooltip delayDuration={0}>
-                      <TooltipTrigger asChild>
-                        <Github size={18} className="text-foreground/60 transition-all duration-300 ease-in-out hover:text-primary" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        Repo
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
               </div>
             </div>
-            {index !== ProjectsList.length - 1 && <Separator />}
           </li>
         ))}
       </ul>
-    </SectionLayout>
+    </section>
   );
 };
 
