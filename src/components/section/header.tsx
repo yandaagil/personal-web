@@ -1,29 +1,7 @@
 import Link from "next/link";
 import { useToast } from "@/components/ui/use-toast"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
-
-type SocialMedia = {
-  name: string;
-  link?: string;
-}
-
-const socialMedia: SocialMedia[] = [
-  {
-    name: "email",
-  },
-  {
-    name: "linkedin",
-    link: "https://www.linkedin.com/in/yandaagil/",
-  },
-  {
-    name: "github",
-    link: "https://www.github.com/yandaagil",
-  },
-  {
-    name: "insta",
-    link: "https://www.instagram.com/yandaagil",
-  },
-]
+import { socialMedia } from "@/constants/social.constant";
 
 const Header = () => {
   const { toast } = useToast()
@@ -52,13 +30,13 @@ const Header = () => {
                   <TooltipTrigger asChild>
                     <button
                       onClick={handleCopy}
-                      className="font-normal text-sm underline underline-offset-2 md:text-base hover:text-blue-700"
+                      className="font-normal text-sm underline underline-offset-2 md:text-base hover:text-primary"
                     >
                       {name}
                     </button>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>click to copy <strong>(yandaagil@gmail.com)</strong></p>
+                    <p>click to copy <span className="font-semibold">(yandaagil@gmail.com)</span></p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
@@ -68,7 +46,7 @@ const Header = () => {
                 target='_blank'
                 key={name}
                 aria-label={name}
-                className="font-normal text-sm underline underline-offset-2 md:text-base hover:text-blue-700"
+                className="font-normal text-sm underline underline-offset-2 md:text-base hover:text-primary"
               >
                 {name}
               </Link>

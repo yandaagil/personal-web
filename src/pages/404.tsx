@@ -11,7 +11,7 @@ const NotFound = () => {
           <h1 className="mb-10 text-3xl font-semibold">
             wHAt r U LookInG 4?
           </h1>
-          <Link href="/" className="font-normal text-sm underline underline-offset-2 md:text-base hover:text-blue-700">
+          <Link href="/" className="font-normal text-sm underline underline-offset-2 md:text-base hover:text-primary">
             take me back to eden
           </Link>
         </div>
