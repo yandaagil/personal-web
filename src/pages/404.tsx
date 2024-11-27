@@ -3,20 +3,19 @@ import Title from "@/components/title";
 
 const NotFound = () => {
   return (
-    <>
+    <div className="min-h-screen p-8 max-w-[700px] mx-auto">
       <Title title="X__X" />
-
-      <section className="container px-4 flex items-center justify-center md:max-w-2xl">
-        <div className="h-full text-center">
+      <main className="md:pb-12 space-y-10 md:space-y-16">
+        <section id="projects" className="space-y-3 mt-8 text-center">
           <h1 className="mb-10 text-3xl font-semibold">
             wHAt r U LookInG 4?
           </h1>
-          <Link href="/" className="font-normal text-sm underline underline-offset-2 md:text-base hover:text-primary">
+          <Link href="/" className="text-gray-400 hover:text-blue-500">
             take me back to eden
           </Link>
-        </div>
-      </section>
-    </>
+        </section>
+      </main>
+    </div>
   );
 };
 

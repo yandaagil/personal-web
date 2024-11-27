@@ -10,19 +10,19 @@ const Header = () => {
     const emailAddress: string = "yandaagil@gmail.com";
     navigator.clipboard.writeText(emailAddress);
     toast({
-      title: "email copied to clipboard!",
+      title: "Email copied to clipboard!",
       description: "yandaagil@gmail.com",
     })
   };
 
   return (
-    <header className="container px-4 mb-10 md:mb-16 md:max-w-2xl">
-      <div className="flex items-start justify-between">
-        <div className="flex flex-col space-y-1">
-          <span className="text-lg font-bold">yandaagil</span>
-          <span>software engineer</span>
+    <header className="md:pt-12">
+      <div className="flex flex-col-reverse sm:flex-row items-start justify-between">
+        <div className="flex flex-col space-y-1 mt-3 sm:mt-0">
+          <h1 className="font-medium">Yanda Agil</h1>
+          <p>Front End Developer</p>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="space-x-3 self-end sm:self-start">
           {socialMedia.map(({ name, link }) => (
             name === 'email' ? (
               <TooltipProvider key={name}>
@@ -30,13 +30,13 @@ const Header = () => {
                   <TooltipTrigger asChild>
                     <button
                       onClick={handleCopy}
-                      className="font-normal text-sm underline underline-offset-2 md:text-base hover:text-primary"
+                      className="text-gray-400 hover:text-blue-500 transition-colors"
                     >
                       {name}
                     </button>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>click to copy <span className="font-semibold">(yandaagil@gmail.com)</span></p>
+                    <p>Click to copy <span className="font-semibold">(yandaagil@gmail.com)</span></p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
@@ -46,7 +46,7 @@ const Header = () => {
                 target='_blank'
                 key={name}
                 aria-label={name}
-                className="font-normal text-sm underline underline-offset-2 md:text-base hover:text-primary"
+                className="text-gray-400 hover:text-blue-500 transition-colors"
               >
                 {name}
               </Link>

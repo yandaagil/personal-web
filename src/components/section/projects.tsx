@@ -5,34 +5,30 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 
 const Projects = () => {
   return (
-    <section id="projects" className="container px-4 space-y-5 md:max-w-2xl">
-      <h2 className="text-lg font-bold">projects</h2>
-      <ul className="space-y-4">
+    <section id="projects" className="space-y-3 mt-8">
+      <h2 className="font-medium">Projects</h2>
+      <ul className="space-y-1 list-disc pl-5">
         {ProjectsList.map(({ title, repo, web }) => (
-          <li className="flex flex-col space-y-3" key={title}>
-            <div className="flex items-center justify-between">
-              <Link href={repo} className="w-full" target="_blank">
-                <h2 className="font-normal text-sm underline underline-offset-2 md:text-base hover:text-primary">
-                  {title}
-                </h2>
-              </Link>
-              <div className="flex items-center space-x-3">
-                {web &&
-                  <Link href={web} target="_blank" aria-label={`${title} web`}>
-                    <TooltipProvider>
-                      <Tooltip delayDuration={0}>
-                        <TooltipTrigger asChild>
-                          <ExternalLink size={18} className="text-foreground/60 hover:text-primary" />
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          live preview
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
-                  </Link>
-                }
-              </div>
-            </div>
+          <li key={title}>
+            <Link href={repo} target="_blank" className="text-blue-500 hover:text-blue-700">
+              {title}
+            </Link>
+            {/* <div className="flex items-center space-x-3">
+              {web &&
+                <Link href={web} target="_blank" aria-label={`${title} web`}>
+                  <TooltipProvider>
+                    <Tooltip delayDuration={0}>
+                      <TooltipTrigger asChild>
+                        <ExternalLink size={18} className="text-foreground/60 hover:text-primary" />
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        live preview
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </Link>
+              }
+            </div> */}
           </li>
         ))}
       </ul>

@@ -5,11 +5,11 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 215 27.9% 16.9%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 27.9% 16.9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 27.9% 16.9%;
     --primary: 221.2 83.2% 53.3%;
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
@@ -30,20 +30,72 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
   }
-}
 
-* {
-  box-sizing: border-box;
-}
+  * {
+    @apply box-border
+  }
 
-html,
-body {
-  font-size: 15px;
-  line-height: 1.5;
-  margin: 0;
-  scroll-behavior: smooth;
-}
+  body {
+    @apply scroll-smooth antialiased tracking-tight bg-background text-foreground;
+  }
 
-body {
-  @apply py-10 md:py-16;
+  .postContent {
+    @apply flex flex-col gap-6 mt-8
+  }
+
+  .postContent h1 {
+    @apply font-medium
+  }
+
+  .postContent h2 {
+    @apply font-medium
+  }
+
+  .postContent h3 {
+    @apply font-medium
+  }
+
+  .postContent h4 {
+    @apply font-medium
+  }
+
+  .postContent p {
+    @apply leading-snug
+  }
+
+  .postContent ol {
+    @apply list-decimal pl-5 space-y-2
+  }
+
+  .postContent ul {
+    @apply list-disc pl-5 space-y-1
+  }
+
+  .postContent li {
+    @apply pl-1
+  }
+
+  .postContent em {
+    @apply font-medium
+  }
+
+  .postContent strong {
+    @apply font-medium
+  }
+  
+  .postContent code {
+    @apply text-sm bg-gray-100 rounded p-1 font-menlo
+  }
+    
+  .postContent blockquote {
+    @apply ml-[0.075em] border-l-2 border-gray-300 pl-4 text-gray-400 italic
+  }
+      
+  .postContent a {
+    @apply text-blue-500
+  }
+
+  .postContent a:hover {
+    @apply text-blue-700
+  }
 }

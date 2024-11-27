@@ -6,45 +6,45 @@ export type Project = {
 
 export const ProjectsList: Project[] = [
   {
-    title: "to-do",
+    title: "To-Do",
     repo: "https://github.com/yandaagil/todo-mern",
     web: "https://todo-app-yanda.vercel.app/",
   },
   {
-    title: "domsat course",
+    title: "Domsat Course",
     repo: "https://github.com/yandaagil/Course",
     web: "https://domsat-course.vercel.app/",
   },
   {
-    title: "moovies",
+    title: "Moovies",
     repo: "https://github.com/yandaagil/moovies",
     web: "https://moovies-yanda.vercel.app/",
   },
   {
-    title: "the social",
+    title: "The Social",
     repo: "https://github.com/yandaagil/thesocial",
   },
   {
-    title: "inventory management",
+    title: "Inventory Management",
     repo: "https://github.com/yandaagil/inventory-management",
   },
   {
-    title: "tic~tac~toe",
+    title: "Tic~Tac~Toe",
     repo: "https://github.com/yandaagil/tic-tac-toe",
     web: "https://tic-tac-toe-yanda.vercel.app/",
   },
   {
-    title: "infinite scroll",
+    title: "Infinite Scroll",
     repo: "https://github.com/yandaagil/infinite-scroll",
     web: "https://infinite-scroll-yanda.vercel.app/",
   },
   {
-    title: "star wars",
+    title: "Star Wars",
     repo: "https://github.com/yandaagil/star-wars",
     web: "https://star-wars-yanda.vercel.app/",
   },
   {
-    title: "bookshelf app",
+    title: "Bookshelf App",
     repo: "https://github.com/yandaagil/bookshelf-app",
     web: "https://bookshelf-app-yanda.vercel.app/",
   }

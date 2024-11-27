@@ -6,7 +6,7 @@ const Title = ({ title }: { title: string }) => {
       <title>{title}</title>
       <meta name="description" content="Portfolio" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href="/white.png" />
+      <link rel="icon" href="/Favicon.png" />
     </Head>
   );
 };
