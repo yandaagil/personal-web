@@ -40,23 +40,22 @@
   }
 
   .postContent {
-    @apply flex flex-col gap-6 mt-8
+    @apply mt-8
   }
 
-  .postContent h1 {
-    @apply font-medium
+  .postContent > *:not(:last-child):not(h1):not(h2):not(h3):not(h4) {
+    @apply mb-6;
+  } 
+
+  .postContent h1, h2, h3, h4 {
+    @apply font-medium mt-8
   }
 
-  .postContent h2 {
-    @apply font-medium
-  }
-
-  .postContent h3 {
-    @apply font-medium
-  }
-
-  .postContent h4 {
-    @apply font-medium
+  .postContent h1:not(:last-child),
+  .postContent h2:not(:last-child),
+  .postContent h3:not(:last-child),
+  .postContent h4:not(:last-child) {
+    @apply mb-3;
   }
 
   .postContent p {

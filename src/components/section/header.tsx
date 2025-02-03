@@ -19,8 +19,10 @@ const Header = () => {
     <header className="md:pt-12">
       <div className="flex flex-col-reverse sm:flex-row items-start justify-between">
         <div className="flex flex-col space-y-1 mt-3 sm:mt-0">
-          <h1 className="font-medium">Yanda Agil</h1>
-          <p>Front End Developer</p>
+          <Link href="/">
+            <h1 className="font-medium">Yanda Agil</h1>
+          </Link>
+          <p>An Optimist, Realist</p>
         </div>
         <div className="space-x-3 self-end sm:self-start">
           {socialMedia.map(({ name, link }) => (
