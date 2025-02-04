@@ -32,7 +32,7 @@
   }
 
   * {
-    @apply box-border
+    @apply box-border;
   }
 
   body {
@@ -40,15 +40,18 @@
   }
 
   .postContent {
-    @apply mt-8
+    @apply mt-8;
   }
 
   .postContent > *:not(:last-child):not(h1):not(h2):not(h3):not(h4) {
     @apply mb-6;
-  } 
+  }
 
-  .postContent h1, h2, h3, h4 {
-    @apply font-medium mt-8
+  .postContent h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-medium mt-8;
   }
 
   .postContent h1:not(:last-child),
@@ -59,42 +62,42 @@
   }
 
   .postContent p {
-    @apply leading-snug
+    @apply leading-snug;
   }
 
   .postContent ol {
-    @apply list-decimal pl-5 space-y-2
+    @apply list-decimal pl-5 space-y-2;
   }
 
   .postContent ul {
-    @apply list-disc pl-5 space-y-1
+    @apply list-disc pl-5 space-y-1;
   }
 
   .postContent li {
-    @apply pl-1
+    @apply pl-1;
   }
 
   .postContent em {
-    @apply font-medium
+    @apply font-medium;
   }
 
   .postContent strong {
-    @apply font-medium
+    @apply font-medium;
   }
-  
+
   .postContent code {
-    @apply text-sm bg-gray-100 rounded p-1 font-menlo
+    @apply text-sm bg-gray-100 rounded p-1 font-menlo;
   }
-    
+
   .postContent blockquote {
-    @apply ml-[0.075em] border-l-2 border-gray-300 pl-4 text-gray-400 italic
+    @apply ml-[0.075em] border-l-2 border-gray-300 pl-4 text-gray-400 italic;
   }
-      
+
   .postContent a {
-    @apply text-blue-500
+    @apply text-blue-500;
   }
 
   .postContent a:hover {
-    @apply text-blue-700
+    @apply text-blue-700;
   }
 }
