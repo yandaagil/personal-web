@@ -1,38 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Website - Yanda Agil
 
-## Getting Started
+This is a personal website for Yanda Agil, serving as a digital portfolio and blog. The website includes links to social profiles and a collection of thoughts on technology, web development, and programming.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- **Minimalist Design**: A clean and simple layout for easy navigation.
+- **Blog Section**: Features articles on various topics such as React Server Components, the future of web development, and more.
+- **Social Links**: Quick access to email, LinkedIn, and Instagram.
+- **Responsive Design**: Optimized for both desktop and mobile viewing.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Purpose
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+This website is intended to:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1. Showcase personal and professional insights on web development and technology.
+2. Provide a simple and elegant platform for sharing thoughts and blog posts.
+3. Act as a personal landing page with contact information and social links.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Frontend**: Likely built with React, Next.js, or another modern JavaScript framework.
+- **Styling**: Minimal CSS or Tailwind CSS for styling.
+- **Hosting**: Can be deployed on Vercel, Netlify, or similar platforms.
 
-## Learn More
+## Setup Instructions
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd your-project-folder
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open `http://localhost:3000` in your browser to view the site.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This is a personal project, but if you'd like to suggest improvements or report issues, feel free to open an issue or submit a pull request.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is open-source and available under the MIT License.

@@ -18,8 +18,10 @@ const Home: React.FC<HomeProps> = ({ posts }) => {
         <ul className="space-y-1 list-disc pl-5">
           {posts.map(({ title, slug, date }) => (
             <li key={title}>
-              <Link href={`/t/${slug}`} className="text-blue-500 hover:text-blue-700 group justify-between flex flex-row">
-                {title}
+              <Link href={`/t/${slug}`} className="group justify-between flex flex-row">
+                <p className="text-blue-500 group-hover:text-blue-700 truncate">
+                  {title}
+                </p>
                 <span className="text-gray-400 group-hover:text-gray-500">
                   {format(new Date(date), 'd MMMM yyyy')}
                 </span>

@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <header className="md:pt-12">
-      <div className="flex flex-col-reverse sm:flex-row items-start justify-between">
+      <div className="flex flex-row justify-between">
         <Link href="/">
           <h1 className="font-medium">Yanda Agil</h1>
         </Link>

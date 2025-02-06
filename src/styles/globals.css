@@ -32,11 +32,11 @@
   }
 
   * {
-    @apply box-border;
+    @apply box-border text-sm md:text-base;
   }
 
   body {
-    @apply scroll-smooth antialiased tracking-tight bg-background text-foreground;
+    @apply scroll-smooth antialiased tracking-tight bg-background text-foreground p-6 md:p-8 max-w-[700px] mx-auto;
   }
 
   .postContent {
