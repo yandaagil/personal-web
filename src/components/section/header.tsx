@@ -29,7 +29,7 @@ const Header = () => {
                   <TooltipTrigger asChild>
                     <button
                       onClick={handleCopy}
-                      className="text-gray-400 hover:text-blue-500 transition-colors"
+                      className="text-gray-400 hover:text-blue-500 transition-colors cursor-pointer"
                     >
                       {name}
                     </button>

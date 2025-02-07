@@ -4,6 +4,9 @@ import { serialize } from 'next-mdx-remote/serialize';
 import { getAllPosts, getPostBySlug } from '@/lib/mdx';
 import { format } from 'date-fns';
 import Title from '@/components/title';
+import remarkGfm from 'remark-gfm';
+import rehypePrism from 'rehype-prism-plus';
+import rehypeCodeTitles from 'rehype-code-titles';
 
 type PostProps = {
   post: {
@@ -21,7 +24,7 @@ export default function BlogPost({ post }: PostProps) {
       <article className='mt-8'>
         <h1 className='font-medium'>{post.title}</h1>
         <span className='text-gray-400'>{format(new Date(post.date), 'd MMMM yyyy')}</span>
-        <div className='postContent'>
+        <div className='mdxContent'>
           <MDXRemote {...post.content} />
         </div>
       </article>
@@ -50,7 +53,15 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     };
   }
 
-  const mdxSource = await serialize(post.content);
+  const mdxSource = await serialize(post.content, {
+    mdxOptions: {
+      remarkPlugins: [remarkGfm],
+      rehypePlugins: [
+        rehypeCodeTitles,
+        rehypePrism
+      ]
+    }
+  });
 
   return {
     props: {

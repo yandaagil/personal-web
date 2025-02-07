@@ -1,6 +1,75 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@plugin 'tailwindcss-animate';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-*: initial;
+  --font-menlo: Menlo, monospace;
+
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+  @media (width >= --theme(--breakpoint-sm)) {
+    max-width: none;
+  }
+  @media (width >= 1400px) {
+    max-width: 1400px;
+  }
+}
 
 @layer base {
   :root {
@@ -37,67 +106,5 @@
 
   body {
     @apply scroll-smooth antialiased tracking-tight bg-background text-foreground p-6 md:p-8 max-w-[700px] mx-auto;
-  }
-
-  .postContent {
-    @apply mt-8;
-  }
-
-  .postContent > *:not(:last-child):not(h1):not(h2):not(h3):not(h4) {
-    @apply mb-6;
-  }
-
-  .postContent h1,
-  h2,
-  h3,
-  h4 {
-    @apply font-medium mt-8;
-  }
-
-  .postContent h1:not(:last-child),
-  .postContent h2:not(:last-child),
-  .postContent h3:not(:last-child),
-  .postContent h4:not(:last-child) {
-    @apply mb-3;
-  }
-
-  .postContent p {
-    @apply leading-snug;
-  }
-
-  .postContent ol {
-    @apply list-decimal pl-5 space-y-2;
-  }
-
-  .postContent ul {
-    @apply list-disc pl-5 space-y-1;
-  }
-
-  .postContent li {
-    @apply pl-1;
-  }
-
-  .postContent em {
-    @apply font-medium;
-  }
-
-  .postContent strong {
-    @apply font-medium;
-  }
-
-  .postContent code {
-    @apply text-sm bg-gray-100 rounded p-1 font-menlo;
-  }
-
-  .postContent blockquote {
-    @apply ml-[0.075em] border-l-2 border-gray-300 pl-4 text-gray-400 italic;
-  }
-
-  .postContent a {
-    @apply text-blue-500;
-  }
-
-  .postContent a:hover {
-    @apply text-blue-700;
   }
 }

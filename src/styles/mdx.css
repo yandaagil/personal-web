@@ -1,0 +1,129 @@
+.mdxContent {
+  margin-top: 2rem;
+}
+
+.mdxContent
+  > *:not(:last-child):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(
+    .rehype-code-title
+  ) {
+  margin-bottom: 1.5rem;
+}
+
+.mdxContent h1,
+.mdxContent h2,
+.mdxContent h3,
+.mdxContent h4,
+.mdxContent h5,
+.mdxContent h6 {
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.mdxContent h1:not(:last-child),
+.mdxContent h2:not(:last-child),
+.mdxContent h3:not(:last-child),
+.mdxContent h4:not(:last-child),
+.mdxContent h5:not(:last-child),
+.mdxContent h6:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.mdxContent p {
+  line-height: 1.375;
+}
+
+.mdxContent ol {
+  list-style-type: decimal;
+  padding-left: 1.25rem;
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
+}
+
+.mdxContent ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin-block-start: 0.25rem;
+  margin-block-end: 0.25rem;
+}
+
+.mdxContent li {
+  padding-left: 0.25rem;
+}
+
+.mdxContent strong {
+  font-weight: 500;
+}
+
+.mdxContent code {
+  font-size: 14px;
+  line-height: calc(1.25 / 0.875);
+  background-color: #f3f4f6;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  font-family: Menlo, monospace;
+}
+
+.mdxContent blockquote {
+  margin-left: 0.075em;
+  border-left-width: 2px;
+  border-color: #d1d5db;
+  padding-left: 1rem;
+  color: #99a1af;
+  font-style: italic;
+}
+
+.mdxContent a {
+  color: #2b7fff;
+}
+
+.mdxContent a:hover {
+  color: #1447e6;
+}
+
+.mdxContent pre {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #f3f4f6;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.mdxContent pre code {
+  background-color: transparent;
+  padding: 0;
+  display: block;
+  font-size: 14px;
+  line-height: calc(1.25 / 0.875);
+  font-family: Menlo, monospace;
+}
+
+.mdxContent table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+.mdxContent table thead {
+  background-color: #f3f4f6;
+}
+
+.mdxContent table th {
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+.mdxContent table td {
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem 1rem;
+}
+
+.mdxContent .table-wrapper {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.mdxContent table tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
