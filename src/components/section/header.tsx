@@ -1,7 +1,23 @@
 import Link from "next/link";
 import { useToast } from "@/components/ui/use-toast"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
-import { socialMedia } from "@/constants/social.constant";
+
+const socialMedia: {
+  name: string;
+  link?: string;
+}[] = [
+    {
+      name: "email",
+    },
+    {
+      name: "linkedin",
+      link: "https://www.linkedin.com/in/yandaagil/",
+    },
+    {
+      name: "insta",
+      link: "https://www.instagram.com/yandaagil",
+    },
+  ];
 
 const Header = () => {
   const { toast } = useToast()
