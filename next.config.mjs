@@ -8,6 +8,12 @@ const mdxConfig = withMDX({
   },
 });
 
-export default mdxConfig({
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
-});
+  reactStrictMode: true,
+  poweredByHeader: false,
+  compress: true,
+};
+
+export default mdxConfig(nextConfig);

@@ -39,6 +39,7 @@ export const getPostBySlug = (slug: string): Post | null => {
       content,
     };
   } catch (error) {
+    console.error(`Error reading post with slug "${slug}":`, error);
     return null;
   }
 };

@@ -1,5 +1,5 @@
-import Link from "next/link";
-import Title from "@/components/title";
+import Link from "next/link"
+import Title from "@/components/title"
 
 const NotFound = () => {
   return (
@@ -9,12 +9,12 @@ const NotFound = () => {
         <h1 className="mb-10 text-3xl font-semibold">
           wHAt r U LookInG 4?
         </h1>
-        <Link href="/" className="text-gray-400 hover:text-blue-500 transition-colors">
+        <Link href="/" className="hover:text-[#6699FF] dark:hover:text-[#FF66CC]">
           take me back to eden
         </Link>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default NotFound;
+export default NotFound
