@@ -6,6 +6,11 @@ import { Post } from "@/types/post.type";
 const POSTS_DIRECTORY = path.join(process.cwd(), "src/posts");
 
 export const getAllPosts = (): Post[] => {
+  // Check if posts directory exists
+  if (!fs.existsSync(POSTS_DIRECTORY)) {
+    return [];
+  }
+
   const fileNames = fs.readdirSync(POSTS_DIRECTORY);
 
   const allPosts = fileNames
